@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title id="doc-title">Hoja de Vida de Juan Pablo García Cáliz</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 id="name">JUAN PABLO GARCÍA CÁLIZ</h1>
+            <p id="contact"><i class="fas fa-envelope"></i> jgarciacaliz@outlook.com | <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/jgarciacaliz">jgarciacaliz</a></p>
+            <a href="CV JPGC2024 - ES - P.pdf" download="CV JPGC2024 - ES - P" id="download-cv-link">
+                <button id="download-cv"><i class="fas fa-download"></i></button>
+            </a>
+        </div>
+        <div class="buttons-container">
+            <button id="toggle-theme" title="Cambiar Tema"><i class="fas fa-adjust"></i></button>
+            <button id="toggle-language"><i class="fas fa-globe"></i></button>
+            <div id="language-selector" style="display: none; position: absolute;">
+                <ul>
+                    <li onclick="changeLanguage('es')"><img src="es-flag.png" alt="ES"></li>
+                    <li onclick="changeLanguage('en')"><img src="en-flag.png" alt="EN"></li>
+                    <li onclick="changeLanguage('fr')"><img src="fr-flag.png" alt="FR"></li>
+                    <li onclick="changeLanguage('de')"><img src="de-flag.png" alt="DE"></li>
+                </ul>
+            </div>
+        </div>  
+    </header>
+
+    <section id="perfil">
+        <h2 id="profile-title"></h2>
+        <p id="profile-content"></p>
+    </section>
+
+    <section id="experiencia">
+        <h2 id="experience-title"></h2>
+        <div>
+            <div id="job1">
+                <h3 id="job1-title"></h3>
+                <h4 id="job1-company"></h4>
+                <p id="job1-duration"></p>
+                <p id="job1-description"></p>
+            </div> 
+            <div id="job2">
+                <h3 id="job2-title"></h3>
+                <h4 id="job2-company"></h4>
+                <p id="job2-duration"></p>
+                <p id="job2-description"></p>
+            </div>
+            <div id="job3">
+                <h3 id="job3-title"></h3>
+                <h4 id="job3-company"></h4>
+                <p id="job3-duration"></p>
+                <p id="job3-description"></p>
+            </div>
+            <div id="job4">
+                <h3 id="job4-title"></h3>
+                <h4 id="job4-company"></h4>
+                <p id="job4-duration"></p>
+                <p id="job4-description"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="educacion">
+        <h2 id="education-title"></h2>
+        <div>
+            <h3 id="education1-degree"></h3>
+            <h4 id="education1-school"></h4>
+            <p id="education1-duration"></p>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <h2 id="skills-title"></h2>
+        <ul id="skills-list">
+            <!-- habilidades -->
+        </ul>
+    </section>
+
+    <section id="idiomas">
+        <h2 id="languages-title"></h2>
+        <ul id="languages-list">
+            <!--idiomas -->
+        </ul>
+    </section>
+
+    <section id="certificaciones">
+        <h2 id="courses-title"></h2>
+        <ul id="courses-list">
+            <!--cursos -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 Juan Pablo García Cáliz</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
