@@ -1,0 +1,49 @@
+<section class="page experience">
+  <div class="experience-header">
+    <h2>{{ 'WORK_TITLE'   | translate }}</h2>
+    <p class="experience-summary">
+      {{ 'WORK_SUMMARY' | translate }}
+    </p>
+    <div class="experience-exp-time" style="margin-top:1.5rem;">
+      <span>
+        {{ 'WORK_EXPERIENCE_TIME' | translate }} || {{ getTotalDuration() }} años de experiencia
+      </span>
+    </div>
+  </div>
+
+  <div class="experience-experience">
+    <div class="experience-profile">
+      <h3>{{ 'WORK_PROFILE_TITLE'   | translate }}</h3>
+      <p>{{ 'WORK_PROFILE_SUMMARY' | translate }}</p>
+    </div>
+
+    <div class="experience-companies">
+      <h3>{{ 'WORK_COMPANIES_TITLE' | translate }}</h3>
+      <ul>
+        <li *ngFor="let company of companies">
+          <button
+            class="company-btn"
+            (click)="toggleDetail(company)"
+          >
+            {{ company.key | translate }}
+          </button>
+          <div *ngIf="selectedDetail === company.detailKey" style="margin:0.5rem 0 1rem 1rem;">
+            <p class="company-desc">{{ (company.key + '_DESC') | translate }}</p>
+          </div>
+          <!-- Roles por empresa -->
+          <ul class="company-roles" *ngIf="selectedDetail === company.detailKey">
+            <li *ngFor="let role of company.roles">
+              <strong class="role-title">{{ role.title | translate }}</strong>
+              <span class="company-dates">
+                {{ formatPeriod(role.start, role.end) }}
+                <span class="company-duration">({{ getDuration(role.start, role.end) }})</span>
+              </span>
+              <p class="role-desc">{{ (role.title.replace('_TITLE', '_DESC')) | translate }}</p>
+              <p class="role-cont">{{ (role.title.replace('_TITLE', '_CONT')) | translate }}</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

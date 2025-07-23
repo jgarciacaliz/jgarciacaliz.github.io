@@ -1,0 +1,75 @@
+<!-- src/app/work/skills.component.html -->
+<section class="page skills">
+  <div class="skills-header">
+    <h2>{{ 'SKILLS_COMPETENCIES_TITLE' | translate }}</h2>
+    <p class="skills-summary">
+      {{ 'SKILLS_COMPETENCIES_SUMMARY' | translate }}
+    </p>
+  </div>
+
+  <div class="skills-competencies-grid">
+    <div class="competencies-list">
+      <h3>{{ 'COMPETENCIES_SECTION_TITLE' | translate }}</h3>
+      <ul>
+        <li *ngFor="let comp of competencies">
+          <strong class="competency-title">{{ comp.key | translate }}</strong>
+          <p class="competency-description">{{ comp.descriptionKey | translate }}</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="skills-list">
+      <h3>{{ 'SKILLS_SECTION_TITLE' | translate }}</h3>
+
+      <h4>{{ 'SKILL_CATEGORY_AREAS' | translate }}</h4>
+      <ul>
+        <li *ngFor="let area of areas">
+          <button class="skill-btn"
+                  [class.selected]="selectedKey === area.key"
+                  (click)="toggle(area.key)">
+            {{ area.key | translate }}
+          </button>
+          <div *ngIf="selectedKey === area.key" class="skill-detail">
+            <p class="skill-description">{{ area.descKey | translate }}</p>
+            <p class="tool-context">{{ area.contKey | translate }}</p>
+          </div>
+        </li>
+      </ul>
+
+      <h4>{{ 'SKILL_CATEGORY_LANGUAGES' | translate }}</h4>
+      <ul>
+        <li *ngFor="let lang of languages">
+          <button class="skill-btn"
+                  [class.selected]="selectedKey === lang.key"
+                  (click)="toggle(lang.key)">
+            {{ lang.key | translate }}
+          </button>
+          <div *ngIf="selectedKey === lang.key" class="skill-detail">
+            <p class="skill-description">{{ lang.descKey | translate }}</p>
+            <p class="tool-context">{{ lang.contKey | translate }}</p>
+          </div>
+        </li>
+      </ul>
+
+      <h4>{{ 'SKILL_CATEGORY_TOOLS' | translate }}</h4>
+      <div *ngFor="let tool of tools" class="tool-group">
+        <h5>{{ tool.titleKey | translate }}</h5>
+        <p class="tool-desc">{{ tool.descKey | translate }}</p>
+        <p class="tool-context">{{ tool.contKey | translate }}</p>
+        <ul>
+          <li *ngFor="let item of tool.items">
+            <button class="skill-btn"
+                    [class.selected]="selectedKey === item.key"
+                    (click)="toggle(item.key)">
+              {{ item.title }}
+            </button>
+            <div *ngIf="selectedKey === item.key" class="skill-detail">
+              <p class="tool-desc">{{ item.desc }}</p>
+              <p class="tool-context">{{ item.context }}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

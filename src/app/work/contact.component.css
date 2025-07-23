@@ -1,0 +1,6 @@
+.contact { padding:2rem; }
+.contact-info { margin:1rem auto 2rem auto; font-size:1rem; color:#444; background:#f8f8f8; border-radius:1rem; padding:1rem; max-width:400px; box-shadow:0 2px 8px rgba(0,0,0,0.04); }
+body.dark-mode .contact-info { color: #eee !important; background: #222 !important; }
+.contact-info a { color:#1976d2; text-decoration:none; }
+body.dark-mode .contact-info a { color: #90caf9 !important; }
+.contact-info span { margin-right:0.5rem; }
