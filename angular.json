@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "CV_NG_TEST_2.0": {
+    "jgarciacaliz.github.io": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "CV_NG_TEST_2.0:build:production"
+              "buildTarget": "jgarciacaliz.github.io:build:production"
             },
             "development": {
-              "buildTarget": "CV_NG_TEST_2.0:build:development"
+              "buildTarget": "jgarciacaliz.github.io:build:development"
             }
           },
           "defaultConfiguration": "development"
