@@ -67,7 +67,7 @@
     margin-bottom: 2vw;
   }
   .menu {
-    flex-direction: row;
+    flex-direction: row !important;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
@@ -183,6 +183,7 @@ body.dark-mode .control-btn {
   transform: translate(-50%, -50%);
   display: flex;
   gap: 2rem;
+  min-width: 400px;
 }
 
 .menu-item {
