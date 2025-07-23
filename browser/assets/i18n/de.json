@@ -1,0 +1,447 @@
+{
+  "BIG_IDEAS": "Große<br>Ideen",
+  "BETTER_SOLUTIONS": "Bessere<br>Lösungen",
+
+  "MENU_PROFILE": "Profil",
+  "MENU_EXPERIENCE": "Erfahrung",
+  "MENU_PROJECTS": "Projekte",
+  "MENU_SKILLS": "Fähigkeiten",
+  "MENU_CERTIFICATIONS_COURSES": "Zertifizierungen",
+  "MENU_CONTACT": "Kontakt",
+
+  "PROFILE_TITLE": "Berufsprofil",
+
+  "PROFILE_OVERVIEW_TITLE": "Beruflicher Überblick",
+  "PROFILE_OVERVIEW": "Industrieingenieur mit Schwerpunkt auf quantitativen Methoden und Technologie, erfahren in Data Science, künstlicher Intelligenz und Prozess­transformation. Experte für Datenanalyse, Automatisierung, Lösungs­integration und Optimierung von Geschäfts­prozessen in IT, Logistik und Gesundheitswesen. Spezialisiert auf digitale Transformation, agile Methoden und den Einsatz von KI für Business Intelligence, Sozialpolitik und Barrierefreiheit. Hohe Führungs-, Kommunikations- und Teamkompetenz mit Fokus auf Ergebnisse und kontinuierliche Verbesserung.",
+
+  "PROFILE_EDUCATION_TITLE": "Akademischer Werdegang",
+  "PROFILE_EDUCATION_1": "Industrieingenieur, Pontificia Universidad Javeriana (2014–2020)",
+  "PROFILE_EDUCATION_2": "Ergänzende Ausbildung in Data Science, künstlicher Intelligenz, Automatisierung und Prozess­management. Internationale Zertifizierungen in Power BI, Machine Learning, Deep Learning, NLP, Webentwicklung und Projekt­management (PMP).",
+
+  "PROFILE_COMPETENCIES_TITLE": "Schlüsselkompetenzen",
+  "PROFILE_COMPETENCY_ANALYSIS": "Datenanalyse und KPI-Management",
+  "PROFILE_COMPETENCY_PROCESS": "IT-Prozess­management und -transformation",
+  "PROFILE_COMPETENCY_NLP": "Einsatz von NLP und Machine Learning",
+  "PROFILE_COMPETENCY_AGILE": "Agile Methoden",
+
+  "PROFILE_AREAS_TITLE": "Fachgebiete",
+  "PROFILE_AREA_DATA_ENG": "Daten­engineering",
+  "PROFILE_AREA_PROCESS_MINING": "Process Mining",
+  "PROFILE_AREA_AUTOMATION": "Automatisierung und Integration",
+  "PROFILE_AREA_SIMULATION": "Simulation und Optimierung",
+
+  "PROFILE_INTERESTS_TITLE": "Interessen und Forschung",
+  "PROFILE_INTEREST_AI_BUSINESS": "KI für Business Intelligence",
+  "PROFILE_INTEREST_SOCIAL_POLICY": "Datengetriebene Sozialpolitik",
+  "PROFILE_INTEREST_ACCESSIBILITY": "Barrierefreiheit und inklusive Technologien",
+
+  "PROFILE_LANGUAGES_TITLE": "Sprachen",
+  "PROFILE_LANGUAGE_ES": "Spanisch (C2)",
+  "PROFILE_LANGUAGE_EN": "Englisch (C2)",
+  "PROFILE_LANGUAGE_FR": "Französisch (B1)",
+  "PROFILE_LANGUAGE_DE": "Deutsch (B1)",
+
+  "WORK_TITLE": "Berufserfahrung",
+  "WORK_SUMMARY": "Überblick über meine Rollen in IT, Logistik und Pharma seit 2019.",
+  "WORK_PROFILE_TITLE": "Berufliche Zusammenfassung",
+  "WORK_PROFILE_SUMMARY": "Industrieingenieur mit Schwerpunkt auf quantitativen Methoden und Technologie, spezialisiert auf digitale Transformation, Datenanalyse und IT-Prozess­governance. Methodisch, direkt und ergebnis­orientiert. Interessen an KI im Geschäft, daten­gestützter Sozialpolitik und Barrierefreiheit.",
+  "WORK_EXPERIENCE_TIME": "Jul 2019 – Heute",
+  "WORK_COMPANIES_TITLE": "Unternehmen",
+
+  "WORK_COMPANY_1": "Summa S.C.I.",
+  "WORK_COMPANY_1_DESC": "Unternehmen der Grupo Argos für Corporate Services: IT, HR, Beschaffung und Finanzen.",
+  "WORK_COMPANY_1_START": "2023-03-01",
+  "WORK_COMPANY_1_END": "2025-07-20",
+  "WORK_COMPANY_1_ROLE_1_TITLE": "Senior Manager IT-Prozess­transformation",
+  "WORK_COMPANY_1_ROLE_1_DESC": "Dokumentation, Analyse und Transformation von IT-Prozessen durch Discoveries und Aktionspläne; Design von Kontrollen und Leitung von Risiko-Workshops sowie Audit- und SLA-Monitoring.",
+  "WORK_COMPANY_1_ROLE_1_CONT": "Unterstützte die Implementierung von RAG-KI in Web-Apps und Chatbots, erstellte ETLs und Power-BI-Dashboards in Azure, verfasste das Daten­governance-Handbuch und arbeitete an CMDB- und Kennzahlen-Hub-Projekten.",
+  "WORK_COMPANY_1_ROLE_1_START": "2023-03-11",
+  "WORK_COMPANY_1_ROLE_1_END": "2025-07-04",
+
+  "WORK_COMPANY_2": "Lean Solutions Group",
+  "WORK_COMPANY_2_DESC": "Daten­analyse- und Prozess­optimierungs­dienstleistungen für die Logistikbranche.",
+  "WORK_COMPANY_2_START": "2021-04-01",
+  "WORK_COMPANY_2_END": "2022-08-08",
+  "WORK_COMPANY_2_ROLE_1_TITLE": "Logistik­koordinator",
+  "WORK_COMPANY_2_ROLE_1_DESC": "Manuelle Verarbeitung von Versand­dokumenten und Kommunikation mit Kunden und Lieferanten (Jetco).",
+  "WORK_COMPANY_2_ROLE_1_CONT": "Automatisierte Kommunikation mit PowerAutomate, überwachte Rechnungsstellung und passte Prozesse an, wodurch ein Defizit von über einer Million USD behoben wurde.",
+  "WORK_COMPANY_2_ROLE_1_START": "2021-04-01",
+  "WORK_COMPANY_2_ROLE_1_END": "2022-01-20",
+  "WORK_COMPANY_2_ROLE_2_TITLE": "Datenassistent",
+  "WORK_COMPANY_2_ROLE_2_DESC": "Erstellung von Monitoring-Dashboards für mehr als 10 US-Logistik­kunden mit 20+ Dashboards und 150 Koordinatoren.",
+  "WORK_COMPANY_2_ROLE_2_CONT": "Messung von KPIs in Finanzen, Logistik und Betrieb; Echtzeit-Analysen, Zeitstudien und ausführliche Berichte.",
+  "WORK_COMPANY_2_ROLE_2_START": "2022-01-20",
+  "WORK_COMPANY_2_ROLE_2_END": "2022-08-08",
+
+  "WORK_COMPANY_3": "GlaxoSmithKline",
+  "WORK_COMPANY_3_DESC": "Multinationales Pharma­unternehmen mit Fokus auf F&E und Vermarktung von Gesundheits­produkten.",
+  "WORK_COMPANY_3_START": "2019-07-01",
+  "WORK_COMPANY_3_END": "2020-06-30",
+  "WORK_COMPANY_3_ROLE_1_TITLE": "Praktikant",
+  "WORK_COMPANY_3_ROLE_1_DESC": "Unterstützung bei Schulungen für Ärzte und Außendienst: Erfassung und Analyse von Teilnahme­daten.",
+  "WORK_COMPANY_3_ROLE_1_CONT": "Erstellung und Pflege von Datenbanken, Entwicklung von Algorithmen zur KPI-Ermittlung und Strukturierung von Produkt­präsentationen.",
+  "WORK_COMPANY_3_ROLE_1_START": "2019-07-01",
+  "WORK_COMPANY_3_ROLE_1_END": "2020-06-30",
+
+  "SKILLS_TITLE": "Fähigkeiten",
+  "SKILLS_SUMMARY": "Zusammenfassung meiner wichtigsten technischen und sozialen Fähigkeiten.",
+  "SKILLS_COMPETENCIES_TITLE": "Fähigkeiten und Kompetenzen",
+  "SKILLS_COMPETENCIES_SUMMARY": "Überblick über meine wesentlichen technischen Fähigkeiten und Soft Skills.",
+  "SKILLS_SECTION_TITLE": "Technische Fähigkeiten",
+  "COMPETENCIES_SECTION_TITLE": "Kompetenzen",
+  "COMPETENCY_TEAMWORK": "Teamarbeit",
+  "COMPETENCY_TEAMWORK_DESCRIPTION": "Effektive Zusammenarbeit mit Kollegen zur Erreichung gemeinsamer Ziele.",
+  "COMPETENCY_PROBLEM_SOLVING": "Problemlösung",
+  "COMPETENCY_PROBLEM_SOLVING_DESCRIPTION": "Fähigkeit, Situationen zu analysieren und effiziente Lösungen zu entwickeln.",
+  "COMPETENCY_ADAPTABILITY": "Anpassungsfähigkeit",
+  "COMPETENCY_ADAPTABILITY_DESCRIPTION": "Flexibilität, sich an Veränderungen und neue Herausforderungen im Arbeitsumfeld anzupassen.",
+
+  "SKILL_CATEGORY_AREAS": "Wissensgebiete",
+  "SKILL_AREA_MACHINE_LEARNING": "Machine Learning",
+  "SKILL_AREA_MACHINE_LEARNING_DESC": "Disziplin, die Systemen ermöglicht, aus Daten zu lernen und sich durch Erfahrung zu verbessern.",
+  "SKILL_AREA_MACHINE_LEARNING_CONT": "Eingesetzt in Klassifikation, Regression und Computer Vision, um Erkenntnisse aus großen Datenmengen zu gewinnen.",
+  "SKILL_AREA_AI": "Künstliche Intelligenz",
+  "SKILL_AREA_AI_DESC": "Fachgebiet zur Entwicklung von Systemen, die Aufgaben mit menschlicher Intelligenz ausführen.",
+  "SKILL_AREA_AI_CONT": "Umfasst Techniken wie Machine Learning, Natural Language Processing und automatisches Schließen.",
+  "SKILL_AREA_DATA_SCIENCE": "Data Science",
+  "SKILL_AREA_DATA_SCIENCE_DESC": "Interdisziplinäres Feld, das Statistik, Datenanalyse und Programmierung kombiniert.",
+  "SKILL_AREA_DATA_SCIENCE_CONT": "Dient der Gewinnung von Erkenntnissen aus strukturierten und unstrukturierten Daten zur Entscheidungs­unterstützung.",
+  "SKILL_AREA_OPERATIONS_RESEARCH": "Operations Research",
+  "SKILL_AREA_OPERATIONS_RESEARCH_DESC": "Fachgebiet, das mathematische und analytische Modelle für Entscheidungen nutzt.",
+  "SKILL_AREA_OPERATIONS_RESEARCH_CONT": "Einsatz in Supply-Chain-Optimierung, Produktions­planung und Analyse komplexer Systeme.",
+  "SKILL_AREA_FULLSTACK_DEVELOPMENT": "Full-Stack-Entwicklung",
+  "SKILL_AREA_FULLSTACK_DEVELOPMENT_DESC": "Entwicklungspraxis, die sowohl Front- als auch Backend-Webentwicklung umfasst.",
+  "SKILL_AREA_FULLSTACK_DEVELOPMENT_CONT": "Ermöglicht das Design und den Einsatz kompletter Weblösungen von UI bis Serverlogik und Datenbank.",
+  "SKILL_AREA_DESIGN_THINKING": "Design Thinking",
+  "SKILL_AREA_DESIGN_THINKING_DESC": "Nutzer­zentrierte Methode zur kreativen Problemlösung.",
+  "SKILL_AREA_DESIGN_THINKING_CONT": "Wird für Ideenfindung, Prototyping und Validierung nutzer­orientierter Lösungen eingesetzt.",
+  "SKILL_AREA_BPM": "Business Process Management",
+  "SKILL_AREA_BPM_DESC": "Disziplin zur Modellierung, Analyse und Optimierung von Geschäfts­prozessen.",
+  "SKILL_AREA_BPM_CONT": "Verbessert die betriebliche Effizienz und Servicequalität in Organisationen.",
+  "SKILL_AREA_AUTOMATION_INTEGRATION": "Automatisierung und Integration",
+  "SKILL_AREA_AUTOMATION_INTEGRATION_DESC": "Verbindung von Systemen und Automatisierung wiederkehrender Abläufe.",
+  "SKILL_AREA_AUTOMATION_INTEGRATION_CONT": "Steigert Produktivität und reduziert Fehler mittels Tools wie PowerAutomate und REST-APIs.",
+  "SKILL_AREA_SYSTEMS_SIMULATION": "Systemsimulation",
+  "SKILL_AREA_SYSTEMS_SIMULATION_DESC": "Technik zur Nachbildung realer Systeme mithilfe von Computer­modellen.",
+  "SKILL_AREA_SYSTEMS_SIMULATION_CONT": "Einsatz für Designvalidierung, Modelltraining und Szenario­tests in kontrollierten Umgebungen.",
+
+  "SKILL_CATEGORY_LANGUAGES": "Programmiersprachen",
+  "SKILL_LANG_C_PLUS_PLUS": "C++",
+  "SKILL_LANG_C_PLUS_PLUS_DESC": "Allgemeine, objektorientierte Hoch­leistungs­programmiersprache.",
+  "SKILL_LANG_C_PLUS_PLUS_CONT": "Verwendet in Systementwicklung, Echtzeit­anwendungen und Embedded Software.",
+  "SKILL_LANG_VBA": "VBA",
+  "SKILL_LANG_VBA_DESC": "Automatisierungs­sprache für Microsoft-Office-Anwendungen auf Basis von Visual Basic.",
+  "SKILL_LANG_VBA_CONT": "Ideal für Makros und Automatisierung in Excel, Access und anderen Office-Apps.",
+  "SKILL_LANG_PYTHON": "Python",
+  "SKILL_LANG_PYTHON_DESC": "Hoch­level-Sprache, interpretiert, multi­paradigmatisch und leicht zu erlernen.",
+  "SKILL_LANG_PYTHON_CONT": "Weit verbreitet in Datenanalyse, Scripting, Automatisierung und Webentwicklung.",
+  "SKILL_LANG_R": "R",
+  "SKILL_LANG_R_DESC": "Programmiersprache und Umgebung für Statistik und Grafiken.",
+  "SKILL_LANG_R_CONT": "Bevorzugt für statistische Analysen, Data Mining und wissenschaftliche Visualisierung.",
+  "SKILL_LANG_SQL": "SQL",
+  "SKILL_LANG_SQL_DESC": "Standard­sprache zur Verwaltung und Abfrage relationaler Datenbanken.",
+  "SKILL_LANG_SQL_CONT": "Unverzichtbar für Schema­design, Datenmanipulation und Berichterstellung.",
+  "SKILL_LANG_HTML": "HTML",
+  "SKILL_LANG_HTML_DESC": "Markup-Sprache zur Strukturierung von Webinhalten.",
+  "SKILL_LANG_HTML_CONT": "Grundlage jeder Webseite, definiert Semantik und Struktur des Dokuments.",
+  "SKILL_LANG_CSS": "CSS",
+  "SKILL_LANG_CSS_DESC": "Stylesheet-Sprache zur Darstellung von HTML-Dokumenten.",
+  "SKILL_LANG_CSS_CONT": "Definiert Layout, Farben und Typografie in responsiven Webseiten.",
+  "SKILL_LANG_JAVASCRIPT": "JavaScript",
+  "SKILL_LANG_JAVASCRIPT_DESC": "Skript­sprache zur Interaktivität von Webseiten.",
+  "SKILL_LANG_JAVASCRIPT_CONT": "Einsatz im Frontend und mit Node.js auch im Backend für komplette Web-Apps.",
+  "SKILL_LANG_TYPESCRIPT": "TypeScript",
+  "SKILL_LANG_TYPESCRIPT_DESC": "Superset von JavaScript mit optionalem statischem Typing.",
+  "SKILL_LANG_TYPESCRIPT_CONT": "Verbessert Wartbarkeit und Skalierbarkeit in großen Angular- und Node.js-Projekten.",
+  "SKILL_LANG_GO": "Go",
+  "SKILL_LANG_GO_DESC": "Kompilierte Google-Sprache, nebenläufig und performant.",
+  "SKILL_LANG_GO_CONT": "Häufig in Webdiensten, Microservices und Infrastruktur-Tools.",
+  "SKILL_LANG_RUST": "Rust",
+  "SKILL_LANG_RUST_DESC": "Systemsprache mit Fokus auf Speicher­sicherheit und Nebenläufigkeit.",
+  "SKILL_LANG_RUST_CONT": "Ideal für Hoch­leistungs­software ohne gängige Speicher­fehler.",
+  "SKILL_LANG_G_CODE": "G-Code, M-Code",
+  "SKILL_LANG_G_CODE_DESC": "Steuer­sprachen für CNC-Maschinen, definieren Werkzeugwege und Funktionen.",
+  "SKILL_LANG_G_CODE_CONT": "Einsatz in additiver Fertigung, Fräsen und industrieller Robotik.",
+
+  "SKILL_CATEGORY_TOOLS": "Programme und Tools",
+  "SKILL_TOOLS_CLOUD_DEVOPS_TITLE": "Cloud & DevOps",
+  "SKILL_TOOLS_CLOUD_DEVOPS_DESC": "Tools für Entwicklung, Deployment und Verwaltung von Anwendungen in der Cloud sowie Automatisierung von DevOps-Prozessen.",
+  "SKILL_TOOLS_CLOUD_DEVOPS_CONT": "Integrierte Lösungen für Entwicklung, Deployment und Monitoring in der Cloud, die Automatisierung und Zusammenarbeit von IT-Teams fördern.",
+  "SKILL_TOOLS_CLOUD_DEVOPS_ITEMS": [
+    {
+      "key": "AZURE",
+      "title": "Microsoft Azure",
+      "desc": "Cloud-Plattform für DevOps, Data Lake, Databricks, ML und AI Foundry.",
+      "context": "Integrierte Dienste für Entwicklung, Analyse und Deployment in der Cloud."
+    },
+    {
+      "key": "DOCKER",
+      "title": "Docker",
+      "desc": "Container für Entwicklung und Deployment von Anwendungen.",
+      "context": "Packt Apps und Abhängigkeiten für Portabilität und Skalierbarkeit."
+    },
+    {
+      "key": "GIT",
+      "title": "Git",
+      "desc": "Verteilte Versionskontrolle für Softwareprojekte.",
+      "context": "Erleichtert Zusammenarbeit und Nachverfolgung von Codeänderungen."
+    }
+  ],
+
+  "SKILL_TOOLS_DATA_AI_TITLE": "Data & KI",
+  "SKILL_TOOLS_DATA_AI_DESC": "Tools für Datenanalyse, künstliche Intelligenz und fortgeschrittene Visualisierung.",
+  "SKILL_TOOLS_DATA_AI_CONT": "Ermöglichen Analyse, Visualisierung und Modellierung von Daten, um Wissen zu gewinnen und Geschäfts­entscheidungen zu unterstützen.",
+  "SKILL_TOOLS_DATA_AI_ITEMS": [
+    {
+      "key": "POWERBI",
+      "title": "Power BI",
+      "desc": "Interaktive Visualisierung von Unternehmensdaten.",
+      "context": "Erstellt dynamische Dashboards und Berichte zur Entscheidungs­findung."
+    },
+    {
+      "key": "TABLEAU",
+      "title": "Tableau",
+      "desc": "Plattform für Datenanalyse und Visualisierung.",
+      "context": "Leistungs­fähiges Tool zur Erkundung großer Datenmengen."
+    },
+    {
+      "key": "SCIKIT",
+      "title": "Scikit-Learn",
+      "desc": "Machine-Learning-Bibliothek für Python.",
+      "context": "Beinhaltet Algorithmen für Klassifikation, Regression und Clustering."
+    },
+    {
+      "key": "TENSORFLOW",
+      "title": "TensorFlow / PyTorch",
+      "desc": "Frameworks für Deep Learning und neuronale Netze.",
+      "context": "Einsatz in fortgeschrittenen KI-Projekten und groß­skaliger Daten­verarbeitung."
+    },
+    {
+      "key": "MYSQL",
+      "title": "MySQL Workbench",
+      "desc": "Tool für Datenbank­design und -verwaltung.",
+      "context": "Bietet visuelles Management von Schemata und SQL-Abfragen."
+    },
+    {
+      "key": "SPSS",
+      "title": "SPSS",
+      "desc": "Software für fortgeschrittene Statistik.",
+      "context": "Ideal für quantitative Studien und statistisches Modellieren."
+    },
+    {
+      "key": "OLLAMA",
+      "title": "Ollama",
+      "desc": "Tool für Sprachmodelle und generative KI.",
+      "context": "Ermöglicht Experimente mit generativen Modellen und Text­verarbeitung."
+    }
+  ],
+
+  "SKILL_TOOLS_WEB_DEV_TITLE": "Webentwicklung & Frameworks",
+  "SKILL_TOOLS_WEB_DEV_DESC": "Frameworks und Tools für moderne Webentwicklung und APIs.",
+  "SKILL_TOOLS_WEB_DEV_CONT": "Beschleunigen die Entwicklung moderner, skalierbarer und mehr­sprachiger Web­anwendungen.",
+  "SKILL_TOOLS_WEB_DEV_ITEMS": [
+    {
+      "key": "NODE",
+      "title": "Node.js",
+      "desc": "Laufzeit­umgebung für server­seitiges JavaScript.",
+      "context": "Ermöglicht schnelle, skalierbare Backend-Anwendungen."
+    },
+    {
+      "key": "ANGULAR",
+      "title": "Angular",
+      "desc": "Framework für skalierbare SPA-Webapps.",
+      "context": "Erleichtert die Erstellung reicher, wartbarer Interfaces."
+    },
+    {
+      "key": "REACT",
+      "title": "React",
+      "desc": "Bibliothek für reaktive Benutzer­oberflächen.",
+      "context": "Ideal zum Aufbau wiederverwendbarer, dynamischer Komponenten."
+    },
+    {
+      "key": "REST",
+      "title": "REST API",
+      "desc": "Standard für die Kommunikation zwischen Webdiensten.",
+      "context": "Integriert Systeme und teilt Daten effizient."
+    },
+    {
+      "key": "I18N",
+      "title": "i18n",
+      "desc": "Internationalisierung und Lokalisierung von Anwendungen.",
+      "context": "Unterstützt mehrere Sprachen und Regionen."
+    },
+    {
+      "key": "OAUTH",
+      "title": "OAuth 2.0",
+      "desc": "Standard für delegierte Autorisierung und sicheren Zugriff.",
+      "context": "Gewährt Ressourcen­zugriff ohne Weitergabe von Anmelde­daten und verwaltet Berechtigungen flexibel."
+    }
+  ],
+
+  "SKILL_TOOLS_AUTOMATION_TITLE": "Automatisierung und Integration",
+  "SKILL_TOOLS_AUTOMATION_DESC": "Tools zur Automatisierung von Workflows und Verbindung von Systemen.",
+  "SKILL_TOOLS_AUTOMATION_CONT": "Automatisieren wiederkehrende Aufgaben und vernetzen Systeme, um Effizienz zu steigern und menschliche Fehler zu reduzieren.",
+  "SKILL_TOOLS_AUTOMATION_ITEMS": [
+    {
+      "key": "POWERAUTOMATE",
+      "title": "PowerAutomate",
+      "desc": "Automatisierung von Geschäfts- und persönlichen Prozessen.",
+      "context": "Erstellt automatisierte Flows zwischen Apps und Diensten."
+    }
+  ],
+
+  "SKILL_TOOLS_SIMULATION_CADCAM_TITLE": "Simulation & CAD/CAM",
+  "SKILL_TOOLS_SIMULATION_CADCAM_DESC": "Tools für Modellierung, Simulation und computer­gestütztes Design.",
+  "SKILL_TOOLS_SIMULATION_CADCAM_CONT": "Ermöglichen Design, Simulation und Analyse von Produkten und Prozessen in Ingenieur- und Fertigungs­umgebungen.",
+  "SKILL_TOOLS_SIMULATION_CADCAM_ITEMS": [
+    {
+      "key": "CADCAM",
+      "title": "CAD/CAM",
+      "desc": "Computer­gestütztes Design und Fertigung.",
+      "context": "Einsatz in Ingenieur­wesen und digitaler Fertigung."
+    },
+    {
+      "key": "BLENDER",
+      "title": "Blender",
+      "desc": "Professionelles 3D-Modelling und Animation.",
+      "context": "Erstellt Grafiken, Animationen und 3D-Simulationen."
+    },
+    {
+      "key": "SOLIDWORKS",
+      "title": "SolidWorks",
+      "desc": "Mechanisches Design und Produkt­simulation.",
+      "context": "Führendes CAD-Tool für Ingenieurdesign."
+    },
+    {
+      "key": "FREECAD",
+      "title": "FreeCAD",
+      "desc": "Parametrisches 3D-Modelling.",
+      "context": "Open-Source-Software für 3D-Design und Simulation."
+    },
+    {
+      "key": "FLEXSIM",
+      "title": "FlexSim",
+      "desc": "Prozess- und Logistik­simulation.",
+      "context": "Modelliert und optimiert Logistik­abläufe."
+    },
+    {
+      "key": "ANYLOGIC",
+      "title": "AnyLogic",
+      "desc": "Simulation komplexer, dynamischer Systeme.",
+      "context": "Ideal für Multi-Methoden-Simulation und Systemanalyse."
+    }
+  ],
+
+  "SKILL_TOOLS_PROCESSES_COLLABORATION_TITLE": "Prozesse und Zusammenarbeit",
+  "SKILL_TOOLS_PROCESSES_COLLABORATION_DESC": "Tools für Prozess­modellierung, Zusammenarbeit und visuelles Design.",
+  "SKILL_TOOLS_PROCESSES_COLLABORATION_CONT": "Modellieren Prozesse, ermöglichen visuelle Zusammenarbeit und UI-Design in multidisziplinären Teams.",
+  "SKILL_TOOLS_PROCESSES_COLLABORATION_ITEMS": [
+    {
+      "key": "BIZAGI",
+      "title": "Bizagi Studio",
+      "desc": "Modellierung und Automatisierung von Geschäfts­prozessen.",
+      "context": "Digitalisiert und optimiert Geschäfts­prozesse."
+    },
+    {
+      "key": "LUCIDCHARTS",
+      "title": "Lucidchart",
+      "desc": "Kollaborative Diagramme und Prozess­visualisierung.",
+      "context": "Online-Diagramme mit Echtzeit-Zusammenarbeit."
+    },
+    {
+      "key": "MURAL",
+      "title": "Mural",
+      "desc": "Visuelle Zusammenarbeit und Brainstorming.",
+      "context": "Schafft kollaborative Räume für Remote-Teams."
+    },
+    {
+      "key": "DRAWIO",
+      "title": "Draw.io",
+      "desc": "Tool für Diagramme und Konzeptkarten.",
+      "context": "Ideal für Flowcharts, Mindmaps und Schemata."
+    },
+    {
+      "key": "FIGMA",
+      "title": "Figma",
+      "desc": "Cloud-basiertes UI-Design und Prototyping.",
+      "context": "Ermöglicht Design, Prototyping und Echtzeit-Zusammenarbeit."
+    }
+  ],
+
+  "CERT_TITLE": "Zertifizierungen und Kurse",
+  "CERT_SUMMARY": "Nachfolgend eine Übersicht der Zertifizierungen, die ich im Rahmen meiner kontinuierlichen beruflichen Weiterbildung erworben habe – sie untermauern viele meiner Fähigkeiten.",
+
+  "CERT_1_TITLE": "Agile Methoden",
+  "CERT_1_DETAIL": "Platzi",
+  "CERT_1_DATE": "2024-01-29",
+  "CERT_1_TUTOR": "Business School",
+  "CERT_1_DESC": "Behandelt Grundlagen und Schlüssel­werkzeuge des agilen Managements, darunter professionelle Kurse zu Scrum, Scrum Master, User Stories, Product-Owner-Grundlagen, Methoden und Frameworks für Product Owner, OKRs, Agile Delivery Management, agile Teamführung sowie Tools wie Trello, Notion und Slack. Fokus auf praktische Anwendung agiler Methoden, Team­zusammenarbeit und Produktivitäts­steigerung durch digitale Werkzeuge.",
+
+  "CERT_2_TITLE": "Einführung in das digitale Produktdesign",
+  "CERT_2_DETAIL": "Platzi",
+  "CERT_2_DATE": "2024-01-29",
+  "CERT_2_TUTOR": "Product School",
+  "CERT_2_DESC": "Einführung in das digitale Design für Websites, Apps, Sprach­interfaces und Chatbots. Umfasst UX/UI-Grundlagen, nutzer­zentriertes Design, effektive Research-Techniken (User Research) und Design Thinking. Ziel ist das Verständnis der Nutzer­erfahrung, Prototyping und praktische Fähigkeiten für Rollen wie UX/UI- oder Product Designer.",
+
+  "CERT_3_TITLE": "Data Fundamentals",
+  "CERT_3_DETAIL": "Platzi",
+  "CERT_3_DATE": "2023-07-19",
+  "CERT_3_TUTOR": "School of Data Science and Artificial Intelligence",
+  "CERT_3_DESC": "Vermittelt essenzielle Grundlagen von Data Science und KI. Beinhaltet Karriere-Guides, KI- und ML-Basics, ChatGPT-Nutzung, Datenethik, Kerntools wie Excel für Daten­bearbeitung sowie mathematische und statistische Grundlagen. Bietet eine solide Basis für Datenanalyse, verantwortungsvollen KI-Einsatz und praktische Informations­verarbeitung.",
+
+  "CERT_4_TITLE": "Project Management Professional (PMP)",
+  "CERT_4_DETAIL": "Udemy",
+  "CERT_4_DATE": "2023-02-16",
+  "CERT_4_TUTOR": "Sorin Dumitrascu",
+  "CERT_4_DESC": "Professionelle Projekt­management-Zertifizierung nach PMP- und PMBOK-Standard. Umfasst Planung, Ausführung und Abschluss; Risiko-, Qualitäts-, Ressourcen- und Kommunikations­management; Beschaffung und Kontrolle. Enthält Scope-, Termin-, Budget-, Stakeholder-Management und Examens­vorbereitung. Bietet einen praxis­orientierten, umfassenden Überblick über Projekt­management mit weltweit anerkannten Best Practices und Tools.",
+
+  "CERT_5_TITLE": "The Complete 2023 Web Development Bootcamp",
+  "CERT_5_DETAIL": "Udemy",
+  "CERT_5_DATE": "2023-01-04",
+  "CERT_5_TUTOR": "Dr. Angela Yu",
+  "CERT_5_DESC": "Intensives, aktuelles Full-Stack-Webentwicklungs-Bootcamp. Behandelt Internet-Grundlagen, HTML, CSS, JavaScript, Praxis­projekte, Responsive Design, Bootstrap, Flex & Grid, jQuery, Git, Node.js, Express, SQL & NoSQL, REST-APIs, Authentifizierung, React, Web3, Blockchain, DApps und digitale Produkt­erstellung. Fokus auf reale Projekte und Beherrschung gefragter Technologien.",
+
+  "CERT_6_TITLE": "Power BI – Datenanalyse und Business Intelligence",
+  "CERT_6_DETAIL": "Udemy",
+  "CERT_6_DATE": "2022-03-01",
+  "CERT_6_TUTOR": "Javier Gomez – datdata",
+  "CERT_6_DESC": "Umfassender Power-BI-Kurs auf Spanisch mit Fokus auf interaktive Berichte und Dashboards anhand realer Projekte. Behandelt Installation, Daten­verbindung und -transformation, fortgeschrittenes DAX-Modelling, professionelle Visualisierung und Veröffentlichung in Web und Power-BI-Service. Enthält 20+ Stunden Inhalt, Projekte, Bonus­module, Best Practices, Excel-Integration und Dozenten­support – ideal zum Meistern von Datenanalyse und BI ohne Vorerfahrung.",
+
+  "CERT_7_TITLE": "NLP – Natural Language Processing mit Python",
+  "CERT_7_DETAIL": "Udemy",
+  "CERT_7_DATE": "2021-02-23",
+  "CERT_7_TUTOR": "Jose Portilla – Pierian Training",
+  "CERT_7_DESC": "Umfassender NLP-Kurs mit Python, von Grundlagen bis fortgeschrittenen Techniken. Beinhaltet Text/PDF-Verarbeitung, Regex, Tokenisierung, Stemming, Lemmatisierung, Stop-Words, Phrase Matching und NER mit NLTK und SpaCy; Text­klassifizierung, ML-Metriken, Feature-Extraktion, Sentiment-Analyse, Topic-Modelling, Projekte mit Scikit-Learn; zudem Deep Learning (LSTM, Text­generierung, Chatbots) mit Keras. Enthält direkte Unterstützung, aktuelle Ressourcen und Community-Zugang.",
+
+  "CERT_8_TITLE": "Python for Finance: Investment Fundamentals & Data Analytics",
+  "CERT_8_DETAIL": "Udemy",
+  "CERT_8_DATE": "2020-12-12",
+  "CERT_8_TUTOR": "365 Careers",
+  "CERT_8_DESC": "Kombiniert Python-Programmierung und Finanz­grundlagen für Einsteiger und Profis, die Daten­analyse in der Finanzwelt anwenden wollen. Startet mit Jupyter, Variablen, Strukturen und Funktionen; geht über zu Risiko/Rendite-Analyse von Aktien, Korrelation, Regression, Alpha/Beta, Markowitz-Frontier, CAPM, Sharpe-Ratio, multivariater Regression und Monte-Carlo-Simulationen. Enthält Theorie, Übungen und reale Cases mit modernen Finanz-Analyse­techniken.",
+
+  "CERT_9_TITLE": "The Business Intelligence Analyst Course 2020",
+  "CERT_9_DETAIL": "Udemy",
+  "CERT_9_DATE": "2020-12-10",
+  "CERT_9_TUTOR": "365 Careers",
+  "CERT_9_DESC": "Umfassender BI-Analyst-Kurs (22 h, 470 Lektionen). Enthält Data-Science-Einführung, angewandte Statistik, Excel, Datenbank-Theorie, SQL, Tableau und SQL-Tableau-Integration. Vermittelt BI, Big Data, ML, KI, Statistik, Daten­visualisierung, relationale DB-Praxis, fortgeschrittenes SQL, interaktive Tableau-Dashboards und reale Business-Cases. Betonung auf praxis­orientiertes Lernen mit Übungen, Quizzes und direkter Unterstützung.",
+
+  "CERT_10_TITLE": "Artificial Intelligence A-Z™: Lerne, wie man eine KI baut",
+  "CERT_10_DETAIL": "Udemy",
+  "CERT_10_DATE": "2020-08-21",
+  "CERT_10_TUTOR": "SuperDataScience Team",
+  "CERT_10_DESC": "Kompletter KI-Kurs von Grundlagen bis zu intelligenten Agenten. Entwickelt acht KIs: LLM-Agenten für Business-Support, Q-Learning zur Prozess­optimierung, Deep-Q-Learning für Mondlander und Spiele (Pac-Man, Kung Fu), PPO & SAC für autonome Fahrzeuge sowie Llama-2-Fine-Tuning für medizinische Chatbots. Beinhaltet zudem DDPG, World Model, Evolution Strategies und generative KI/LLMs in der Cloud. Praktische Tutorials, Colab-Code, Vorlagen und Support.",
+
+  "CERT_11_TITLE": "Deep Learning A-Z™: Praxis künstlicher neuronaler Netze",
+  "CERT_11_DETAIL": "Udemy",
+  "CERT_11_DATE": "2020-08-19",
+  "CERT_11_TUTOR": "SuperDataScience Team",
+  "CERT_11_DESC": "Umfangreicher Deep-Learning-Kurs in zwei Bänden (überwacht & unüberwacht). Bietet Intuitions-Tutorials und Projekte mit realen Daten: Churn-Vorhersage, Bilderkennung, Aktienpreis-Prognose, Betrugserkennung, Empfehlungs­systeme, Autoencoder. Nutzt TensorFlow, PyTorch, Theano, Keras und Scikit-Learn mit Code-Übungen und wiederverwendbaren Vorlagen sowie direktem Support.",
+
+  "CERT_12_TITLE": "Machine Learning A-Z™: Praxis mit Python & R in Data Science",
+  "CERT_12_DETAIL": "Udemy",
+  "CERT_12_DATE": "2020-07-02",
+  "CERT_12_TUTOR": "SuperDataScience Team",
+  "CERT_12_DESC": "Erlerne Machine Learning von Grund auf mit Theorie, Algorithmen und Bibliotheken via Python und R. Behandelt Preprocessing; Regression (linear, multiple, polynomial, SVR, Bäume, Random Forest); Klassifikation (logistisch, K-NN, SVM, Naive Bayes, Bäume, Random Forest); Clustering (K-means, hierarchisch); Assoziations­regeln (Apriori, Eclat); Reinforcement Learning; NLP; Deep Learning (ANN, CNN); Dimensionalitäts­reduktion; Modell­auswahl und -verbesserung. Jede Sektion enthält Übungen und downloadbare Vorlagen.",
+
+  "CONTACT_TITLE": "Kontaktinformationen"
+}
