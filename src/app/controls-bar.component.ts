@@ -40,8 +40,6 @@ export class ControlsBarComponent {
   toggleTheme() {
     const isDark = document.body.classList.toggle('dark-mode');
     localStorage.setItem('darkModeOverride', isDark ? '1' : '0');
-    // Quitar el foco del botón después de un pequeño retraso para evitar que el borde permanezca tras animaciones
-    // Forzar blur varias veces para asegurar que el foco se retire tras animaciones y re-renderizados
     let attempts = 0;
     function forceBlur() {
       const btn = document.getElementById('toggle-theme');

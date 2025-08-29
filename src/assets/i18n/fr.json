@@ -83,6 +83,44 @@
   "WORK_COMPANY_3_ROLE_1_START": "2019-07-01",
   "WORK_COMPANY_3_ROLE_1_END": "2020-06-30",
 
+    "PROJECTS_TITLE": "Projets",
+  "PROJECTS_SUMMARY": "Sélection organisée de projets professionnels et personnels. Comprend des plateformes de gouvernance des données et des processus, de l’analytique et de l’IA appliquée, ainsi que des projets open-source et d’apprentissage.",
+  "PROJECTS_PROFESSIONAL_TITLE": "Projets professionnels",
+  "PROJECTS_PERSONAL_TITLE": "Projets personnels",
+  "PROJECT_STACK": "Domaines de connaissance et technologies utilisées",
+  "PROJECT_VIEW_GITHUB": "Voir sur GitHub",
+
+  "PROJ_PROF_ASEGURA20_NAME": "Gouvernance des données",
+  "PROJ_PROF_ASEGURA20_DESC": "Mise en œuvre des politiques, exigences, processus et outils pour la gestion de la gouvernance des données chez Summa. Inclut la création de processus de gouvernance, des exigences pour les incidents de données et l’analytique, l’élaboration de l’EDM et la publication du manuel de gouvernance des données dans l’organisation.",
+
+  "PROJ_PROF_CMDB_NAME": "CMDB",
+  "PROJ_PROF_CMDB_DESC": "Alimentation de la base de données de configuration (ServiceNow) avec des informations en temps réel sur les composants réseau et les actifs de l’organisation, soutenue par l’analytique et des indicateurs pour garantir la conformité des équipes d’infrastructure, de télécommunications et de support sur site, ainsi que l’utilisation d’ITOM pour la découverte réseau.",
+
+  "PROJ_PROF_HUB_IND_NAME": "Hub d’indicateurs",
+  "PROJ_PROF_HUB_IND_DESC": "Collecte des questions métiers des responsables de la direction IT, leur catégorisation et analyse pour l’approvisionnement des données et la construction du modèle de données conceptuel de la direction IT, puis traitement dans le datalake pour un déploiement dans Power BI.",
+
+  "PROJ_PROF_RAG_BOTS_NAME": "Agent de processus",
+  "PROJ_PROF_RAG_BOTS_DESC": "Mise en place de la structure documentaire pour alimenter un modèle ChatGPT sur infrastructure Azure avec mémoire RAG, axé sur l’autogestion des connaissances des collaborateurs concernant la documentation des processus de chaque direction.",
+
+  "PROJ_PERSONAL_GITHUBIO_NAME": "Portfolio personnel (ce site)",
+  "PROJ_PERSONAL_GITHUBIO_DESC": "SPA Angular 20 avec i18n et animations, déployée sur GitHub Pages (dossier docs/), avec composants réutilisables et style cohérent.",
+
+  "PROJ_PERSONAL_SEER_NAME": "Seer — Ingestion et Visualisation de Marché en Go",
+  "PROJ_PERSONAL_SEER_DESC": "Application en Go pour ingestion en temps réel (WS/REST), stockage local et visualisation 2D avec boucle de rendu Ebiten. Exportation disponible pour analyses et tests.",
+
+  "PROJ_PERSONAL_GATOVISION_NAME": "Gatovision — Reconnaissance de chats",
+  "PROJ_PERSONAL_GATOVISION_DESC": "Projet de vision par ordinateur pour détection/suivi via webcam. Pipeline simple avec prétraitement, seuils et prototypes de modèles légers.",
+
+  "PROJ_PERSONAL_ALIRIO_NAME": "Alirio — Bot Discord avec Architecture Hexagonale",
+  "PROJ_PERSONAL_ALIRIO_DESC": "Bot modulaire avec ports et adaptateurs pour Discord et LLMs (Ollama). Fournit contexte, mémoire légère et utilitaires de conversation.",
+
+  "PROJECT_COMPANY": "Entreprise",
+  "PROJ_COMPANY_SUMMA_ARGOS": "Summa (Grupo Argos)",
+  "PROJ_COMPANY_INTERNAL_TI": "IT Interne",
+
+  "RELATED_PROJECTS": "Projets liés",
+  "SEE_ALL_PROJECTS": "Voir tous les projets",
+
   "SKILLS_TITLE": "Compétences",
   "SKILLS_SUMMARY": "Résumé de mes principales compétences techniques et personnelles.",
   "SKILLS_COMPETENCIES_TITLE": "Compétences et aptitudes",

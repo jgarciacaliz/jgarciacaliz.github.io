@@ -12,7 +12,6 @@ import { CommonModule } from '@angular/common';
 export class ExperienceComponent {
   constructor(public translate: TranslateService) {}
 
-  // Etiquetas de empresa y su traducción de detalle
   companies = [
     {
       key: 'WORK_COMPANY_1',
@@ -67,7 +66,6 @@ export class ExperienceComponent {
     }
   ];
 
-  // cuál está seleccionado
   selectedDetail: string | null = null;
 
   toggleDetail(company: { detailKey: string }) {
@@ -77,7 +75,6 @@ export class ExperienceComponent {
         : company.detailKey;
   }
 
-  // Calcula la duración en meses entre dos fechas (YYYY-MM-DD)
   getDuration(start: string, end: string): string {
     const lang = (this.translate.currentLang || 'es') as 'es' | 'en' | 'de' | 'fr';
     const startDate = new Date(this.translate.instant(start));
@@ -94,7 +91,7 @@ export class ExperienceComponent {
     const totalMonths = years * 12 + months;
     const y = Math.floor(totalMonths / 12);
     const m = totalMonths % 12;
-    // Duration templates for each language
+
     const templates = {
       es: {
         year: (n: number) => n + ' año' + (n > 1 ? 's' : ''),
@@ -129,7 +126,6 @@ export class ExperienceComponent {
     return result || t.zero;
   }
 
-  // Calcula el tiempo total sumando todas las empresas
   getTotalDuration(): string {
     const lang = (this.translate.currentLang || 'es') as 'es' | 'en' | 'de' | 'fr';
     let totalMonths = 0;
@@ -149,7 +145,7 @@ export class ExperienceComponent {
     }
     const y = Math.floor(totalMonths / 12);
     const m = totalMonths % 12;
-    // Duration templates for each language
+
     const templates = {
       es: {
         year: (n: number) => n + ' año' + (n > 1 ? 's' : ''),
@@ -184,7 +180,6 @@ export class ExperienceComponent {
     return result || t.zero;
   }
 
-  // Format the period as "From Month Year to Month Year" in the current language
   formatPeriod(start: string, end: string): string {
     const lang = this.translate.currentLang || 'es';
     const months: { [key: string]: string[] } = {
@@ -207,7 +202,6 @@ export class ExperienceComponent {
     };
     const startDate = new Date(this.translate.instant(start));
     const endDateRaw = this.translate.instant(end);
-    // Handle 'Present' in all supported languages
     const presentWords: { [key: string]: string } = {
       es: 'presente',
       en: 'present',
@@ -250,7 +244,6 @@ export class ExperienceComponent {
         ? `De ${startMonth} ${startYear} à ${presentDisplay[lang]}`
         : `De ${startMonth} ${startYear} à ${endMonth} ${endYear}`;
     } else {
-      // fallback to English
       return isPresent
         ? `From ${startMonth} ${startYear} to Present`
         : `From ${startMonth} ${startYear} to ${endMonth} ${endYear}`;

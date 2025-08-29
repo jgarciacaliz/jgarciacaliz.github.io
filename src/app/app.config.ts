@@ -34,7 +34,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
     provideAnimations(),
-    importProvidersFrom(                 // ngx-translate
+    importProvidersFrom(
       HttpClientModule,
       TranslateModule.forRoot({
         defaultLanguage: (typeof window !== 'undefined' && window.navigator.language ? window.navigator.language.split('-')[0] : 'es'),

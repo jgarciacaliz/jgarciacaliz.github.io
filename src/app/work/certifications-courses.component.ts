@@ -11,7 +11,6 @@ import { CommonModule } from '@angular/common';
 })
 export class CertificationsCoursesComponent {
   certNumber(cert: any): number {
-    // Extrae el número del certificado desde la clave, por ejemplo CERT_1_TITLE
     const match = cert.title.match(/CERT_(\d+)_TITLE/);
     return match ? parseInt(match[1], 10) : 0;
   }

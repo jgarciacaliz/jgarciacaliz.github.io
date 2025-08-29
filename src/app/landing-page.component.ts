@@ -1,4 +1,3 @@
-// src/app/landing-page.component.ts
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
@@ -89,9 +88,9 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
     setTimeout(() => this.showFirst  = false, 1500);
     setTimeout(() => this.showSecond = true, 2000);
     setTimeout(() => this.showSecond = false,3500);
-    setTimeout(() => this.showPhoto = true, 4500); // foto a 1s
-    setTimeout(() => this.showName = true, 5500); // nombre a 2s
-    setTimeout(() => this.showMenu = true, 6500); // menú a 3s
+    setTimeout(() => this.showPhoto = true, 4500);
+    setTimeout(() => this.showName = true, 5500);
+    setTimeout(() => this.showMenu = true, 6500);
   }
 
   ngAfterViewInit(): void {

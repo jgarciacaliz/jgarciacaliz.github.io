@@ -1,12 +1,13 @@
-// src/app/work/skills.component.ts
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
+import { ALL_PROJECTS, SKILL_TO_PROJECTS, Project } from './projects.data';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, RouterModule],
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css']
 })
@@ -92,9 +93,18 @@ export class SkillsComponent {
         items: this.translate.instant('SKILL_TOOLS_PROCESSES_COLLABORATION_ITEMS')
       }
     ];
-  }
+  } 
+
+  allProjects: Project[] = ALL_PROJECTS;
+  skillIndex = SKILL_TO_PROJECTS;
 
   toggle(key: string) {
     this.selectedKey = this.selectedKey === key ? null : key;
+  }
+
+  relatedProjects(key: string | null): Project[] {
+    if (!key) return [];
+    const ids = this.skillIndex[key] || [];
+    return this.allProjects.filter(p => ids.includes(p.id));
   }
 }

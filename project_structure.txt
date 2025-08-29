@@ -1,0 +1,1863 @@
+jgarciacaliz.github.io
+    └── angular.json
+    └── package.json
+    └── proxy.conf.json
+    └── tsconfig.app.json
+    └── tsconfig.json
+    └── docs
+        └── prerendered-routes.json
+        └── browser
+            └── 404.html
+            └── index.html
+            └── styles-CDIC4BFN.css
+            └── assets
+                └── documents
+    └── src
+        └── index.html
+        └── styles.css
+        └── app
+            └── app.css
+            └── app.html
+            └── controls-bar.component.css
+            └── controls-bar.component.html
+            └── header.component.css
+            └── header.component.html
+            └── landing-page.component.css
+            └── landing-page.component.html
+            └── language-switcher.component.css
+            └── proxy.conf.json
+            └── work
+                └── certifications-courses.component.css
+                └── certifications-courses.component.html
+                └── contact.component.css
+                └── contact.component.html
+                └── experience.component.css
+                └── experience.component.html
+                └── header.component.html
+                └── landing-page.component.css
+                └── profile.component.css
+                └── profile.component.html
+                └── projects.component.css
+                └── projects.component.html
+                └── skills.component.css
+                └── skills.component.html
+        └── assets
+            └── documents
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\angular.json
+--------------------------------------------------------------------------------
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "jgarciacaliz.github.io": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets"
+              }
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "outputPath": "docs",
+            "baseHref": "/jgarciacaliz.github.io/"
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "jgarciacaliz.github.io:build:production"
+            },
+            "development": {
+              "buildTarget": "jgarciacaliz.github.io:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular/build:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets"
+              }
+            ],
+            "styles": [
+              "src/styles.css"
+            ]
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
+        }
+      }
+    }
+  }
+}
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\package.json
+--------------------------------------------------------------------------------
+{
+  "name": "jgarciacaliz.github.io",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --proxy-config proxy.conf.json --open",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^20.1.0",
+    "@angular/common": "^20.0.0",
+    "@angular/compiler": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "@angular/forms": "^20.0.0",
+    "@angular/platform-browser": "^20.0.0",
+    "@angular/router": "^20.0.0",
+    "@ngx-translate/core": "^16.0.4",
+    "@ngx-translate/http-loader": "^16.0.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^20.0.0",
+    "@angular/cli": "^20.0.0",
+    "@angular/compiler-cli": "^20.0.0",
+    "@types/jasmine": "~5.1.0",
+    "angular-cli-ghpages": "^2.0.3",
+    "jasmine-core": "~5.7.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.8.2"
+  }
+}
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\proxy.conf.json
+--------------------------------------------------------------------------------
+{}
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\tsconfig.app.json
+--------------------------------------------------------------------------------
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": []
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts"
+  ]
+}
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\tsconfig.json
+--------------------------------------------------------------------------------
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "preserve"
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "typeCheckHostBindings": true,
+    "strictTemplates": true
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\docs\prerendered-routes.json
+--------------------------------------------------------------------------------
+{
+  "routes": {}
+}
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\docs\browser\404.html
+--------------------------------------------------------------------------------
+<!doctype html>
+<html lang="en" data-beasties-container>
+<head>
+  <meta charset="utf-8">
+  <title>jgarciacaliz.github.io</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}html,body{margin:0;padding:0;width:100%;height:100%}body{font-family:Source Sans Pro,sans-serif;background:beige;color:#333}</style><link rel="stylesheet" href="styles-CDIC4BFN.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-CDIC4BFN.css"></noscript></head>
+<body>
+  <app-root></app-root>
+<script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-FTUXYG7C.js" type="module"></script></body>
+</html>
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\docs\browser\index.html
+--------------------------------------------------------------------------------
+<!doctype html>
+<html lang="en" data-beasties-container>
+<head>
+  <meta charset="utf-8">
+  <title>jgarciacaliz.github.io</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}html,body{margin:0;padding:0;width:100%;height:100%}body{font-family:Source Sans Pro,sans-serif;background:beige;color:#333}</style><link rel="stylesheet" href="styles-CDIC4BFN.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-CDIC4BFN.css"></noscript></head>
+<body>
+  <app-root></app-root>
+<script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-FTUXYG7C.js" type="module"></script></body>
+</html>
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\docs\browser\styles-CDIC4BFN.css
+--------------------------------------------------------------------------------
+@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2) format("woff2");unicode-range:U+1F00-1FFF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2) format("woff2");unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}html,body{margin:0;padding:0;width:100%;height:100%}body{font-family:Source Sans Pro,sans-serif;background:beige;color:#333}body.dark-mode{background:#222;color:#eee}a.dark-mode{color:#9cf}body.dark-mode .app-header{background:#222;color:#eee}body.dark-mode .app-header a{color:#eee}body.dark-mode .app-header a.active{border-color:#9cf}
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\index.html
+--------------------------------------------------------------------------------
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jgarciacaliz.github.io</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\styles.css
+--------------------------------------------------------------------------------
+/* src/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /* default site font */
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #f5f5dc;
+  color: #333;
+}
+
+body.dark-mode {
+  background: #222;
+  color: #eee;
+}
+a.dark-mode {
+  color: #9cf;
+}
+
+body.dark-mode .app-header {
+  background: #222;
+  color: #eee;
+}
+body.dark-mode .app-header a {
+  color: #eee;
+}
+body.dark-mode .app-header a.active {
+  border-color: #9cf;
+}
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\app.css
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\app.html
+--------------------------------------------------------------------------------
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  :host {
+    --bright-blue: oklch(51.01% 0.274 263.83);
+    --electric-violet: oklch(53.18% 0.28 296.97);
+    --french-violet: oklch(47.66% 0.246 305.88);
+    --vivid-pink: oklch(69.02% 0.277 332.77);
+    --hot-red: oklch(61.42% 0.238 15.34);
+    --orange-red: oklch(63.32% 0.24 31.68);
+
+    --gray-900: oklch(19.37% 0.006 300.98);
+    --gray-700: oklch(36.98% 0.014 302.71);
+    --gray-400: oklch(70.9% 0.015 304.04);
+
+    --red-to-pink-to-purple-vertical-gradient: linear-gradient(
+      180deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
+
+    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
+      90deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
+
+    --pill-accent: var(--bright-blue);
+
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    font-size: 3.125rem;
+    color: var(--gray-900);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.125rem;
+    margin: 0;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+  }
+
+  p {
+    margin: 0;
+    color: var(--gray-700);
+  }
+
+  main {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: inherit;
+    position: relative;
+  }
+
+  .angular-logo {
+    max-width: 9.2rem;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 3rem;
+  }
+
+  .content h1 {
+    margin-top: 1.75rem;
+  }
+
+  .content p {
+    margin-top: 1.5rem;
+  }
+
+  .divider {
+    width: 1px;
+    background: var(--red-to-pink-to-purple-vertical-gradient);
+    margin-inline: 0.5rem;
+  }
+
+  .pill-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .pill {
+    display: flex;
+    align-items: center;
+    --pill-accent: var(--bright-blue);
+    background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
+    color: var(--pill-accent);
+    padding-inline: 0.75rem;
+    padding-block: 0.375rem;
+    border-radius: 2.75rem;
+    border: 0;
+    transition: background 0.3s ease;
+    font-family: var(--inter-font);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4rem;
+    letter-spacing: -0.00875rem;
+    text-decoration: none;
+  }
+
+  .pill:hover {
+    background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
+  }
+
+  .pill-group .pill:nth-child(6n + 1) {
+    --pill-accent: var(--bright-blue);
+  }
+  .pill-group .pill:nth-child(6n + 2) {
+    --pill-accent: var(--french-violet);
+  }
+  .pill-group .pill:nth-child(6n + 3),
+  .pill-group .pill:nth-child(6n + 4),
+  .pill-group .pill:nth-child(6n + 5) {
+    --pill-accent: var(--hot-red);
+  }
+
+  .pill-group svg {
+    margin-inline-start: 0.25rem;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.73rem;
+    margin-top: 1.5rem;
+  }
+
+  .social-links path {
+    transition: fill 0.3s ease;
+    fill: var(--gray-400);
+  }
+
+  .social-links a:hover svg path {
+    fill: var(--gray-900);
+  }
+
+  @media screen and (max-width: 650px) {
+    .content {
+      flex-direction: column;
+      width: max-content;
+    }
+
+    .divider {
+      height: 1px;
+      width: 100%;
+      background: var(--red-to-pink-to-purple-horizontal-gradient);
+      margin-block: 1.5rem;
+    }
+  }
+</style>
+
+<app-controls-bar />
+<main class="main">
+  <div class="content">
+    <div class="left-side">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 982 239"
+        fill="none"
+        class="angular-logo"
+      >
+        <g clip-path="url(#a)">
+          <path
+            fill="url(#b)"
+            d="M388.676 191.625h30.849L363.31 31.828h-35.758l-56.215 159.797h30.848l13.174-39.356h60.061l13.256 39.356Zm-65.461-62.675 21.602-64.311h1.227l21.602 64.311h-44.431Zm126.831-7.527v70.202h-28.23V71.839h27.002v20.374h1.392c2.782-6.71 7.2-12.028 13.255-15.956 6.056-3.927 13.584-5.89 22.503-5.89 8.264 0 15.465 1.8 21.684 5.318 6.137 3.518 10.964 8.673 14.319 15.382 3.437 6.71 5.074 14.81 4.992 24.383v76.175h-28.23v-71.92c0-8.019-2.046-14.237-6.219-18.819-4.173-4.5-9.819-6.791-17.102-6.791-4.91 0-9.328 1.063-13.174 3.272-3.846 2.128-6.792 5.237-9.001 9.328-2.046 4.009-3.191 8.918-3.191 14.728ZM589.233 239c-10.147 0-18.82-1.391-26.103-4.091-7.282-2.7-13.092-6.382-17.511-10.964-4.418-4.582-7.528-9.655-9.164-15.219l25.448-6.136c1.145 2.372 2.782 4.663 4.991 6.954 2.209 2.291 5.155 4.255 8.837 5.81 3.683 1.554 8.428 2.291 14.074 2.291 8.019 0 14.647-1.964 19.884-5.81 5.237-3.845 7.856-10.227 7.856-19.064v-22.665h-1.391c-1.473 2.946-3.601 5.892-6.383 9.001-2.782 3.109-6.464 5.645-10.965 7.691-4.582 2.046-10.228 3.109-17.101 3.109-9.165 0-17.511-2.209-25.039-6.545-7.446-4.337-13.42-10.883-17.757-19.474-4.418-8.673-6.628-19.473-6.628-32.565 0-13.091 2.21-24.301 6.628-33.383 4.419-9.082 10.311-15.955 17.839-20.7 7.528-4.746 15.874-7.037 25.039-7.037 7.037 0 12.846 1.145 17.347 3.518 4.582 2.373 8.182 5.236 10.883 8.51 2.7 3.272 4.746 6.382 6.137 9.327h1.554v-19.8h27.821v121.749c0 10.228-2.454 18.737-7.364 25.447-4.91 6.709-11.538 11.7-20.048 15.055-8.509 3.355-18.165 4.991-28.884 4.991Zm.245-71.266c5.974 0 11.047-1.473 15.302-4.337 4.173-2.945 7.446-7.118 9.573-12.519 2.21-5.482 3.274-12.027 3.274-19.637 0-7.609-1.064-14.155-3.274-19.8-2.127-5.646-5.318-10.064-9.491-13.255-4.174-3.11-9.329-4.746-15.384-4.746s-11.537 1.636-15.792 4.91c-4.173 3.272-7.365 7.772-9.492 13.418-2.128 5.727-3.191 12.191-3.191 19.392 0 7.2 1.063 13.745 3.273 19.228 2.127 5.482 5.318 9.736 9.573 12.764 4.174 3.027 9.41 4.582 15.629 4.582Zm141.56-26.51V71.839h28.23v119.786h-27.412v-21.273h-1.227c-2.7 6.709-7.119 12.191-13.338 16.446-6.137 4.255-13.747 6.382-22.748 6.382-7.855 0-14.81-1.718-20.783-5.237-5.974-3.518-10.72-8.591-14.075-15.382-3.355-6.709-5.073-14.891-5.073-24.464V71.839h28.312v71.921c0 7.609 2.046 13.664 6.219 18.083 4.173 4.5 9.655 6.709 16.365 6.709 4.173 0 8.183-.982 12.111-3.028 3.927-2.045 7.118-5.072 9.655-9.082 2.537-4.091 3.764-9.164 3.764-15.218Zm65.707-109.395v159.796h-28.23V31.828h28.23Zm44.841 162.169c-7.61 0-14.402-1.391-20.457-4.091-6.055-2.7-10.883-6.791-14.32-12.109-3.518-5.319-5.237-11.946-5.237-19.801 0-6.791 1.228-12.355 3.765-16.773 2.536-4.419 5.891-7.937 10.228-10.637 4.337-2.618 9.164-4.664 14.647-6.055 5.4-1.391 11.046-2.373 16.856-3.027 7.037-.737 12.683-1.391 17.102-1.964 4.337-.573 7.528-1.555 9.574-2.782 1.963-1.309 3.027-3.273 3.027-5.973v-.491c0-5.891-1.718-10.391-5.237-13.664-3.518-3.191-8.51-4.828-15.056-4.828-6.955 0-12.356 1.473-16.447 4.5-4.009 3.028-6.71 6.546-8.183 10.719l-26.348-3.764c2.046-7.282 5.483-13.336 10.31-18.328 4.746-4.909 10.638-8.59 17.511-11.045 6.955-2.455 14.565-3.682 22.912-3.682 5.809 0 11.537.654 17.265 2.045s10.965 3.6 15.711 6.71c4.746 3.109 8.51 7.282 11.455 12.6 2.864 5.318 4.337 11.946 4.337 19.883v80.184h-27.166v-16.446h-.9c-1.719 3.355-4.092 6.464-7.201 9.328-3.109 2.864-6.955 5.237-11.619 6.955-4.828 1.718-10.229 2.536-16.529 2.536Zm7.364-20.701c5.646 0 10.556-1.145 14.729-3.354 4.173-2.291 7.364-5.237 9.655-9.001 2.292-3.763 3.355-7.854 3.355-12.273v-14.155c-.9.737-2.373 1.391-4.5 2.046-2.128.654-4.419 1.145-7.037 1.636-2.619.491-5.155.9-7.692 1.227-2.537.328-4.746.655-6.628.901-4.173.572-8.019 1.472-11.292 2.781-3.355 1.31-5.973 3.11-7.855 5.401-1.964 2.291-2.864 5.318-2.864 8.918 0 5.237 1.882 9.164 5.728 11.782 3.682 2.782 8.51 4.091 14.401 4.091Zm64.643 18.328V71.839h27.412v19.965h1.227c2.21-6.955 5.974-12.274 11.292-16.038 5.319-3.763 11.456-5.645 18.329-5.645 1.555 0 3.355.082 5.237.163 1.964.164 3.601.328 4.91.573v25.938c-1.227-.41-3.109-.819-5.646-1.146a58.814 58.814 0 0 0-7.446-.49c-5.155 0-9.738 1.145-13.829 3.354-4.091 2.209-7.282 5.236-9.655 9.164-2.373 3.927-3.519 8.427-3.519 13.5v70.448h-28.312ZM222.077 39.192l-8.019 125.923L137.387 0l84.69 39.192Zm-53.105 162.825-57.933 33.056-57.934-33.056 11.783-28.556h92.301l11.783 28.556ZM111.039 62.675l30.357 73.803H80.681l30.358-73.803ZM7.937 165.115 0 39.192 84.69 0 7.937 165.115Z"
+          />
+          <path
+            fill="url(#c)"
+            d="M388.676 191.625h30.849L363.31 31.828h-35.758l-56.215 159.797h30.848l13.174-39.356h60.061l13.256 39.356Zm-65.461-62.675 21.602-64.311h1.227l21.602 64.311h-44.431Zm126.831-7.527v70.202h-28.23V71.839h27.002v20.374h1.392c2.782-6.71 7.2-12.028 13.255-15.956 6.056-3.927 13.584-5.89 22.503-5.89 8.264 0 15.465 1.8 21.684 5.318 6.137 3.518 10.964 8.673 14.319 15.382 3.437 6.71 5.074 14.81 4.992 24.383v76.175h-28.23v-71.92c0-8.019-2.046-14.237-6.219-18.819-4.173-4.5-9.819-6.791-17.102-6.791-4.91 0-9.328 1.063-13.174 3.272-3.846 2.128-6.792 5.237-9.001 9.328-2.046 4.009-3.191 8.918-3.191 14.728ZM589.233 239c-10.147 0-18.82-1.391-26.103-4.091-7.282-2.7-13.092-6.382-17.511-10.964-4.418-4.582-7.528-9.655-9.164-15.219l25.448-6.136c1.145 2.372 2.782 4.663 4.991 6.954 2.209 2.291 5.155 4.255 8.837 5.81 3.683 1.554 8.428 2.291 14.074 2.291 8.019 0 14.647-1.964 19.884-5.81 5.237-3.845 7.856-10.227 7.856-19.064v-22.665h-1.391c-1.473 2.946-3.601 5.892-6.383 9.001-2.782 3.109-6.464 5.645-10.965 7.691-4.582 2.046-10.228 3.109-17.101 3.109-9.165 0-17.511-2.209-25.039-6.545-7.446-4.337-13.42-10.883-17.757-19.474-4.418-8.673-6.628-19.473-6.628-32.565 0-13.091 2.21-24.301 6.628-33.383 4.419-9.082 10.311-15.955 17.839-20.7 7.528-4.746 15.874-7.037 25.039-7.037 7.037 0 12.846 1.145 17.347 3.518 4.582 2.373 8.182 5.236 10.883 8.51 2.7 3.272 4.746 6.382 6.137 9.327h1.554v-19.8h27.821v121.749c0 10.228-2.454 18.737-7.364 25.447-4.91 6.709-11.538 11.7-20.048 15.055-8.509 3.355-18.165 4.991-28.884 4.991Zm.245-71.266c5.974 0 11.047-1.473 15.302-4.337 4.173-2.945 7.446-7.118 9.573-12.519 2.21-5.482 3.274-12.027 3.274-19.637 0-7.609-1.064-14.155-3.274-19.8-2.127-5.646-5.318-10.064-9.491-13.255-4.174-3.11-9.329-4.746-15.384-4.746s-11.537 1.636-15.792 4.91c-4.173 3.272-7.365 7.772-9.492 13.418-2.128 5.727-3.191 12.191-3.191 19.392 0 7.2 1.063 13.745 3.273 19.228 2.127 5.482 5.318 9.736 9.573 12.764 4.174 3.027 9.41 4.582 15.629 4.582Zm141.56-26.51V71.839h28.23v119.786h-27.412v-21.273h-1.227c-2.7 6.709-7.119 12.191-13.338 16.446-6.137 4.255-13.747 6.382-22.748 6.382-7.855 0-14.81-1.718-20.783-5.237-5.974-3.518-10.72-8.591-14.075-15.382-3.355-6.709-5.073-14.891-5.073-24.464V71.839h28.312v71.921c0 7.609 2.046 13.664 6.219 18.083 4.173 4.5 9.655 6.709 16.365 6.709 4.173 0 8.183-.982 12.111-3.028 3.927-2.045 7.118-5.072 9.655-9.082 2.537-4.091 3.764-9.164 3.764-15.218Zm65.707-109.395v159.796h-28.23V31.828h28.23Zm44.841 162.169c-7.61 0-14.402-1.391-20.457-4.091-6.055-2.7-10.883-6.791-14.32-12.109-3.518-5.319-5.237-11.946-5.237-19.801 0-6.791 1.228-12.355 3.765-16.773 2.536-4.419 5.891-7.937 10.228-10.637 4.337-2.618 9.164-4.664 14.647-6.055 5.4-1.391 11.046-2.373 16.856-3.027 7.037-.737 12.683-1.391 17.102-1.964 4.337-.573 7.528-1.555 9.574-2.782 1.963-1.309 3.027-3.273 3.027-5.973v-.491c0-5.891-1.718-10.391-5.237-13.664-3.518-3.191-8.51-4.828-15.056-4.828-6.955 0-12.356 1.473-16.447 4.5-4.009 3.028-6.71 6.546-8.183 10.719l-26.348-3.764c2.046-7.282 5.483-13.336 10.31-18.328 4.746-4.909 10.638-8.59 17.511-11.045 6.955-2.455 14.565-3.682 22.912-3.682 5.809 0 11.537.654 17.265 2.045s10.965 3.6 15.711 6.71c4.746 3.109 8.51 7.282 11.455 12.6 2.864 5.318 4.337 11.946 4.337 19.883v80.184h-27.166v-16.446h-.9c-1.719 3.355-4.092 6.464-7.201 9.328-3.109 2.864-6.955 5.237-11.619 6.955-4.828 1.718-10.229 2.536-16.529 2.536Zm7.364-20.701c5.646 0 10.556-1.145 14.729-3.354 4.173-2.291 7.364-5.237 9.655-9.001 2.292-3.763 3.355-7.854 3.355-12.273v-14.155c-.9.737-2.373 1.391-4.5 2.046-2.128.654-4.419 1.145-7.037 1.636-2.619.491-5.155.9-7.692 1.227-2.537.328-4.746.655-6.628.901-4.173.572-8.019 1.472-11.292 2.781-3.355 1.31-5.973 3.11-7.855 5.401-1.964 2.291-2.864 5.318-2.864 8.918 0 5.237 1.882 9.164 5.728 11.782 3.682 2.782 8.51 4.091 14.401 4.091Zm64.643 18.328V71.839h27.412v19.965h1.227c2.21-6.955 5.974-12.274 11.292-16.038 5.319-3.763 11.456-5.645 18.329-5.645 1.555 0 3.355.082 5.237.163 1.964.164 3.601.328 4.91.573v25.938c-1.227-.41-3.109-.819-5.646-1.146a58.814 58.814 0 0 0-7.446-.49c-5.155 0-9.738 1.145-13.829 3.354-4.091 2.209-7.282 5.236-9.655 9.164-2.373 3.927-3.519 8.427-3.519 13.5v70.448h-28.312ZM222.077 39.192l-8.019 125.923L137.387 0l84.69 39.192Zm-53.105 162.825-57.933 33.056-57.934-33.056 11.783-28.556h92.301l11.783 28.556ZM111.039 62.675l30.357 73.803H80.681l30.358-73.803ZM7.937 165.115 0 39.192 84.69 0 7.937 165.115Z"
+          />
+        </g>
+        <defs>
+          <radialGradient
+            id="c"
+            cx="0"
+            cy="0"
+            r="1"
+            gradient-transform="rotate(118.122 171.182 60.81) scale(205.794)"
+            gradient-units="userSpaceOnUse"
+          >
+            <stop stop-color="#FF41F8" />
+            <stop offset=".707" stop-color="#FF41F8" stop-opacity=".5" />
+            <stop offset="1" stop-color="#FF41F8" stop-opacity="0" />
+          </radialGradient>
+          <linearGradient
+            id="b"
+            x1="0"
+            x2="982"
+            y1="192"
+            y2="192"
+            gradient-units="userSpaceOnUse"
+          >
+            <stop stop-color="#F0060B" />
+            <stop offset="0" stop-color="#F0070C" />
+            <stop offset=".526" stop-color="#CC26D5" />
+            <stop offset="1" stop-color="#7702FF" />
+          </linearGradient>
+          <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
+        </defs>
+      </svg>
+      <h1>Hello, {{ title }}</h1>
+      <p>Congratulations! Your app is running. 🎉</p>
+    </div>
+    <div class="divider" role="separator" aria-label="Divider"></div>
+    <div class="right-side">
+      <div class="pill-group">
+        @for (item of [
+          { title: 'Explore the Docs', link: 'https://angular.dev' },
+          { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
+          { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
+          { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
+          { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
+        ]; track item.title) {
+          <a
+            class="pill"
+            [href]="item.link"
+            target="_blank"
+            rel="noopener"
+          >
+            <span>{{ item.title }}</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="14"
+              viewBox="0 -960 960 960"
+              width="14"
+              fill="currentColor"
+            >
+              <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
+              />
+            </svg>
+          </a>
+        }
+      </div>
+      <div class="social-links">
+        <a
+          href="https://github.com/angular/angular"
+          aria-label="Github"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            alt="Github"
+          >
+            <path
+              d="M12.3047 0C5.50634 0 0 5.50942 0 12.3047C0 17.7423 3.52529 22.3535 8.41332 23.9787C9.02856 24.0946 9.25414 23.7142 9.25414 23.3871C9.25414 23.0949 9.24389 22.3207 9.23876 21.2953C5.81601 22.0377 5.09414 19.6444 5.09414 19.6444C4.53427 18.2243 3.72524 17.8449 3.72524 17.8449C2.61064 17.082 3.81137 17.0973 3.81137 17.0973C5.04697 17.1835 5.69604 18.3647 5.69604 18.3647C6.79321 20.2463 8.57636 19.7029 9.27978 19.3881C9.39052 18.5924 9.70736 18.0499 10.0591 17.7423C7.32641 17.4347 4.45429 16.3765 4.45429 11.6618C4.45429 10.3185 4.9311 9.22133 5.72065 8.36C5.58222 8.04931 5.16694 6.79833 5.82831 5.10337C5.82831 5.10337 6.85883 4.77319 9.2121 6.36459C10.1965 6.09082 11.2424 5.95546 12.2883 5.94931C13.3342 5.95546 14.3801 6.09082 15.3644 6.36459C17.7023 4.77319 18.7328 5.10337 18.7328 5.10337C19.3942 6.79833 18.9789 8.04931 18.8559 8.36C19.6403 9.22133 20.1171 10.3185 20.1171 11.6618C20.1171 16.3888 17.2409 17.4296 14.5031 17.7321C14.9338 18.1012 15.3337 18.8559 15.3337 20.0084C15.3337 21.6552 15.3183 22.978 15.3183 23.3779C15.3183 23.7009 15.5336 24.0854 16.1642 23.9623C21.0871 22.3484 24.6094 17.7341 24.6094 12.3047C24.6094 5.50942 19.0999 0 12.3047 0Z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://twitter.com/angular"
+          aria-label="Twitter"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            alt="Twitter"
+          >
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCbn1OgGei-DV7aSRo_HaAiw"
+          aria-label="Youtube"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            width="29"
+            height="20"
+            viewBox="0 0 29 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            alt="Youtube"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M27.4896 1.52422C27.9301 1.96749 28.2463 2.51866 28.4068 3.12258C29.0004 5.35161 29.0004 10 29.0004 10C29.0004 10 29.0004 14.6484 28.4068 16.8774C28.2463 17.4813 27.9301 18.0325 27.4896 18.4758C27.0492 18.9191 26.5 19.2389 25.8972 19.4032C23.6778 20 14.8068 20 14.8068 20C14.8068 20 5.93586 20 3.71651 19.4032C3.11363 19.2389 2.56449 18.9191 2.12405 18.4758C1.68361 18.0325 1.36732 17.4813 1.20683 16.8774C0.613281 14.6484 0.613281 10 0.613281 10C0.613281 10 0.613281 5.35161 1.20683 3.12258C1.36732 2.51866 1.68361 1.96749 2.12405 1.52422C2.56449 1.08095 3.11363 0.76113 3.71651 0.596774C5.93586 0 14.8068 0 14.8068 0C14.8068 0 23.6778 0 25.8972 0.596774C26.5 0.76113 27.0492 1.08095 27.4896 1.52422ZM19.3229 10L11.9036 5.77905V14.221L19.3229 10Z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<router-outlet />
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\controls-bar.component.css
+--------------------------------------------------------------------------------
+.controls-bar {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  align-items: center;
+  z-index: 1201;
+}
+.control-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.8);
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  transition: background 0.2s, color 0.2s;
+  color: #222;
+}
+.control-btn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  fill: #222;
+  transition: none;
+}
+body.dark-mode .controls-bar {
+  background: rgba(34, 34, 34, 0.95);
+  box-shadow: 0 4px 16px rgba(192,0,0,0.25);
+}
+body.dark-mode .control-btn,
+body.dark-mode .control-btn svg {
+  color: #fff;
+  fill: #fff;
+  background: #C00000;
+  border: 2px solid #C00000;
+}
+body.dark-mode .control-btn:hover {
+  background: #a00000;
+  color: #fff;
+}
+.controls-bar .control-btn:focus {
+  outline: 2px solid #C00000;
+  box-shadow: 0 0 0 2px #C0000033;
+}
+.controls-bar .control-btn:hover {
+  border: 2px solid #C00000;
+  color: #C00000;
+}
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\controls-bar.component.html
+--------------------------------------------------------------------------------
+<div class="controls-bar">
+  <button id="toggle-theme" class="control-btn" aria-label="Toggle theme" (click)="toggleTheme()">
+    <svg width="20" height="20" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M256,32A224,224,0,0,0,97.61,414.39,224,224,0,1,0,414.39,97.61,222.53,222.53,0,0,0,256,32ZM64,256C64,150.13,150.13,64,256,64V448C150.13,448,64,361.87,64,256Z"/></svg>
+  </button>
+  <div class="switcher" style="position: relative;">
+    <button class="control-btn" aria-label="Select language" (click)="showLangMenu = !showLangMenu">
+      <svg width="20" height="20" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M478.33,433.6l-90-218a22,22,0,0,0-40.67,0l-90,218a22,22,0,1,0,40.67,16.79L316.66,406H419.33l18.33,44.39A22,22,0,0,0,458,464a22,22,0,0,0,20.32-30.4ZM334.83,362,368,281.65,401.17,362Z"/><path d="M267.84,342.92a22,22,0,0,0-4.89-30.7c-.2-.15-15-11.13-36.49-34.73,39.65-53.68,62.11-114.75,71.27-143.49H330a22,22,0,0,0,0-44H214V70a22,22,0,0,0-44,0V90H54a22,22,0,0,0,0,44H251.25c-9.52,26.95-27.05,69.5-53.79,108.36-31.41-41.68-43.08-68.65-43.17-68.87a22,22,0,0,0-40.58,17c.58,1.38,14.55,34.23,52.86,83.93.92,1.19,1.83,2.35,2.74,3.51-39.24,44.35-77.74,71.86-93.85,80.74a22,22,0,1,0,21.07,38.63c2.16-1.18,48.6-26.89,101.63-85.59,22.52,24.08,38,35.44,38.93,36.1a22,22,0,0,0,30.75-4.9Z"/></svg>
+    </button>
+    <div *ngIf="showLangMenu" style="position: absolute; left: 50%; top: 100%; transform: translateX(-50%); margin-top: 0.25rem; display: flex; flex-direction: column; gap: 0.25rem; background: none; box-shadow: none; border: none;">
+      <button *ngFor="let l of languages"
+              [class.active]="translate.currentLang === l.code"
+              (click)="select(l.code); showLangMenu = false;"
+              style="background: none; border: none; padding: 0; cursor: pointer; box-shadow: none;">
+        <img [src]="'assets/i18n/' + l.code + '.svg'" alt="{{ l.label }} flag" style="width: 2rem; height: 2rem; border-radius: 0; box-shadow: none;">
+      </button>
+    </div>
+  </div>
+</div>
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\header.component.css
+--------------------------------------------------------------------------------
+.app-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 0rem 2rem;
+  min-height: 3.5rem;
+  z-index: 200;
+}
+.app-header nav {
+  display: flex;
+  gap: 1rem;
+}
+.app-header a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  position: relative;
+  padding: 0.2em 0.2em;
+  border-radius: 0;
+  background: none;
+  transition: color 0.2s;
+  min-width: 0;
+  display: inline-block;
+}
+.app-header a.active {
+  border-bottom: none;
+}
+.app-header a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.1em;
+  height: 3px;
+  background: #C00000;
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+  transition: left 0.4s cubic-bezier(.4,1,.6,1), right 0.4s cubic-bezier(.4,1,.6,1), opacity 0.2s;
+}
+.app-header a.active::after,
+.app-header a:hover::after {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.app-header a:hover {
+  color: #C00000 !important;
+  background: none;
+}
+.controls {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.control-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.8);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background 0.2s, color 0.2s;
+  color: currentColor;
+}
+.control-btn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+.lang-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255,255,255,0.9);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 0;
+  min-width: unset;
+}
+body.dark-mode .app-header {
+  color: #eee;
+}
+body.dark-mode .app-header a {
+  color: #eee;
+}
+body.dark-mode .app-header a.active {
+  border-color: #fff;
+}
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\header.component.html
+--------------------------------------------------------------------------------
+<header @fadeIn class="app-header">
+  <nav>
+    <a routerLink="profile" routerLinkActive="active">{{ 'MENU_PROFILE' | translate }}</a>
+    <a routerLink="experience" routerLinkActive="active">{{ 'MENU_EXPERIENCE' | translate }}</a>
+    <a routerLink="skills" routerLinkActive="active">{{ 'MENU_SKILLS' | translate }}</a>
+    <a routerLink="certifications-courses" routerLinkActive="active">{{ 'MENU_CERTIFICATIONS_COURSES' | translate }}</a>
+    <a routerLink="contact" routerLinkActive="active">{{ 'MENU_CONTACT' | translate }}</a>
+  </nav>
+  <div class="controls">
+  </div>
+</header>
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\landing-page.component.css
+--------------------------------------------------------------------------------
+/* Header block for name and photo */
+.landing-header-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5vw;
+  margin-top: 3vw;
+}
+
+
+.landing-photo {
+  width: min(32vw, 180px);
+  height: min(32vw, 180px);
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  margin-bottom: 2vw;
+  border: 4px solid #fff;
+  background: #f5f5f5;
+}
+
+
+
+
+.landing-name {
+  font-family: 'Trebuchet MS', Trebuchet, 'Source Sans Pro', Arial, sans-serif;
+  font-size: clamp(2.2rem, 7vw, 5.2rem);
+  font-weight: bold;
+  letter-spacing: 0.0em;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 1.2vw;
+  text-align: center;
+  line-height: 1.1;
+  word-break: break-word;
+}
+
+
+
+::ng-deep body.dark-mode .landing-name {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.menu {
+  display: flex;
+  gap: 2vw;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  margin-top: 2.5vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .landing-header-block {
+    margin-bottom: 3vw;
+    margin-top: 4vw;
+  }
+  .landing-photo {
+    width: 38vw;
+    height: 38vw;
+    margin-bottom: 3vw;
+  }
+  .landing-name {
+    font-size: clamp(1.2rem, 10vw, 2.8rem);
+    margin-bottom: 2vw;
+  }
+  .menu {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1vw 2vw;
+    margin-top: 3vw;
+    max-width: 95vw;
+  }
+  .menu-item {
+    display: inline-block;
+    min-width: 120px;
+    text-align: center;
+    margin-bottom: 0.5vw;
+    flex: 1 1 40%;
+  }
+}
+
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 2.5vw 2vw 0 2vw;
+  box-sizing: border-box;
+}
+
+/* Contenedor de globos */
+.controls {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  z-index: 10;
+}
+
+/* Estilo común a los globos */
+.control-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.8);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background 0.2s, color 0.2s;
+  color: currentColor;     /* lets svg fill follow the current text color */
+}
+
+.control-btn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;      /* picks up the .control-btn color */
+}
+
+.control-btn:hover {
+  background: rgba(255,255,255,1);
+}
+
+body.dark-mode .control-btn {
+  color: #eee;    /* or whatever you choose for dark */
+}
+
+/* Dropdown de idioma que envuelve al componente */
+.lang-dropdown {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  background: rgba(255,255,255,0.9);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+/* Animaciones de headings */
+.heading {
+  position: absolute;
+  left: 50%;
+  white-space: nowrap;
+  line-height: 1;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1rem, calc(100vw / 16), 50vh);
+}
+
+.big-ideas {
+  top: 35%;
+  transform: translate(-50%, -60%);
+}
+
+.better-solutions {
+  top: 35%;
+  transform: translate(-50%, -40%);
+}
+
+/* Menú principal */
+.menu {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 2rem;
+  min-width: 400px;
+}
+
+.menu-item {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: currentColor;
+  transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+.menu-item:hover {
+  transform: translateY(-3px);
+}
+.menu-item::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -2px;
+  height: 3px;
+  background: #C00000;
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+  transition: left 0.5s cubic-bezier(.4,1,.6,1), right 0.5s cubic-bezier(.4,1,.6,1), opacity 0.2s;
+}
+.menu-item:hover::after {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\landing-page.component.html
+--------------------------------------------------------------------------------
+<app-controls-bar />
+<ng-container *ngIf="!showHeader">
+  <div class="landing-container">
+    <!-- controles -->
+    <div class="controls">
+      <!-- Theme and language icons removed as requested. Will be moved to their own component. -->
+    </div>
+
+    <!-- Nombre y foto arriba, luego menú -->
+    <!-- ...existing code... -->
+    <h1 *ngIf="showFirst"  @fadeInOut class="heading big-ideas"
+        [innerHTML]="'BIG_IDEAS'         | translate">
+    </h1>
+    <h1 *ngIf="showSecond" @fadeInOut class="heading better-solutions"
+        [innerHTML]="'BETTER_SOLUTIONS' | translate">
+    </h1>
+
+
+    <div *ngIf="showPhoto" class="landing-header-block" @fadeInOut>
+      <img class="landing-photo" src="assets/Picture1.png" alt="Juan Pablo García Cáliz" />
+    </div>
+    <div *ngIf="showName" class="landing-header-block" @fadeInOut>
+      <div class="landing-name">JUAN PABLO GARCÍA CÁLIZ</div>
+    </div>
+
+    <!-- texto animado -->
+    <h1 *ngIf="showFirst"  @fadeInOut class="heading big-ideas"
+        [innerHTML]="'BIG_IDEAS'         | translate">
+    </h1>
+    <h1 *ngIf="showSecond" @fadeInOut class="heading better-solutions"
+        [innerHTML]="'BETTER_SOLUTIONS' | translate">
+    </h1>
+
+    <!-- menú centrado y transformable -->
+    <nav *ngIf="showMenu"
+         [@slideUp]
+         [@menuTransform]="menuState"
+         (@menuTransform.done)="onMenuTransformed($event)"
+         class="menu">
+      <a href="/profile" class="menu-item" (click)="go($event, 'profile')">{{ 'MENU_PROFILE' | translate }}</a>
+      <a href="/experience" class="menu-item" (click)="go($event, 'experience')">{{ 'MENU_EXPERIENCE' | translate }}</a>
+      <a href="/skills" class="menu-item" (click)="go($event, 'skills')">{{ 'MENU_SKILLS' | translate }}</a>
+      <a href="/certifications-courses" class="menu-item" (click)="go($event, 'certifications-courses')">{{ 'MENU_CERTIFICATIONS_COURSES' | translate }}</a>
+      <a href="/contact" class="menu-item" (click)="go($event, 'contact')">{{ 'MENU_CONTACT' | translate }}</a>
+    </nav>
+    <app-controls-bar *ngIf="showMenu"></app-controls-bar>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="showHeader">
+  <!-- header "de verdad" aparece solo tras la animación -->
+  <app-header @slideDown></app-header>
+  <div class="spa-content" style="padding-top: 4rem;">
+    <router-outlet></router-outlet>
+  </div>
+</ng-container>
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\language-switcher.component.css
+--------------------------------------------------------------------------------
+/* src/app/language-switcher.component.css */
+.switcher {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.switcher button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.switcher button.active,
+.switcher button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255,255,255,0.9);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 100;
+  padding: 0;
+  min-width: unset;
+}
+
+body.dark-mode .switcher button {
+  background: #222;
+  color: #eee;
+  border-color: #444;
+}
+body.dark-mode .switcher button.active,
+body.dark-mode .switcher button:hover {
+  background: #9cf;
+  color: #222;
+}
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\proxy.conf.json
+--------------------------------------------------------------------------------
+{}
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\work\certifications-courses.component.css
+--------------------------------------------------------------------------------
+/* Botón de descarga rojo */
+.cert-download-btn {
+  display: inline-block;
+  margin-top: 0.8em;
+  padding: 0.5em 1.2em;
+  background: #C00000;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.cert-download-btn:hover {
+  background: #a00000;
+}
+
+/* --- Estilo consistente con experience y skills --- */
+.cert-card {
+  background:#fff;
+  border-radius:1rem;
+  box-shadow:0 2px 12px rgba(0,0,0,0.08);
+  padding:1.5rem;
+  min-width:260px;
+  max-width:340px;
+}
+body.dark-mode .cert-card {
+  background: #222 !important;
+}
+
+.cert-card h3 {
+  margin-top:0;
+  font-size:1.2rem;
+  font-weight: bold;
+  color:#222;
+}
+body.dark-mode .cert-card h3 {
+  color: #222 !important;
+}
+
+.cert-card p {
+  color:#555;
+  margin:0.25rem 0;
+}
+body.dark-mode .cert-card p {
+  color: #555 !important;
+}
+
+/* Subtítulos rojos para detalles importantes */
+.cert-card .cert-subtitle {
+  color: #C00000;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.certifications-courses { padding:2rem; }
+.cert-header { text-align:center; margin-bottom:2rem; }
+.cert-summary { font-size:1.2rem; color:#555; margin-bottom:1.5rem; }
+body.dark-mode .cert-summary { color: #eee !important; }
+
+.cert-list { display:flex; gap:2rem; justify-content:center; flex-wrap:wrap; }
+
+.cert-card {
+  background:#fff;
+  border-radius:1rem;
+  box-shadow:0 2px 12px rgba(0,0,0,0.08);
+  padding:1.5rem;
+  min-width:220px;
+  max-width:320px;
+}
+.cert-card h3 { margin-top:0; font-size:1.1rem; color:#333; }
+body.dark-mode .cert-card h3 { color: #eee !important; }
+
+.cert-card p { color:#444; margin:0.25rem 0; }
+body.dark-mode .cert-card p { color: #eee !important; }
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\work\certifications-courses.component.html
+--------------------------------------------------------------------------------
+<section class="page certifications-courses">
+  <div class="cert-header">
+    <h2>{{ 'CERT_TITLE' | translate }}</h2>
+    <p class="cert-summary">{{ 'CERT_SUMMARY' | translate }}</p>
+  </div>
+  <div class="cert-list">
+    <div *ngFor="let cert of certifications" class="cert-card">
+      <h3>{{ cert.title | translate }}</h3>
+      <p class="cert-subtitle">{{ cert.detail | translate }}</p>
+      <p><strong>{{ cert.date | translate }}</strong></p>
+      <p><em>{{ cert.tutor | translate }}</em></p>
+      <p>{{ cert.description | translate }}</p>
+      <ng-container *ngIf="certNumber(cert) <= 12">
+        <a class="cert-download-btn" [href]="'assets/documents/cert' + certNumber(cert) + '.pdf'" download target="_blank">
+          Descargar certificado
+        </a>
+      </ng-container>
+    </div>
+  </div>
+</section>
+<!-- Helper function for cert number -->
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\work\contact.component.css
+--------------------------------------------------------------------------------
+.contact { padding:2rem; }
+.contact-info { margin:1rem auto 2rem auto; font-size:1rem; color:#444; background:#f8f8f8; border-radius:1rem; padding:1rem; max-width:400px; box-shadow:0 2px 8px rgba(0,0,0,0.04); }
+body.dark-mode .contact-info { color: #eee !important; background: #222 !important; }
+.contact-info a { color:#1976d2; text-decoration:none; }
+body.dark-mode .contact-info a { color: #90caf9 !important; }
+.contact-info span { margin-right:0.5rem; }
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\work\contact.component.html
+--------------------------------------------------------------------------------
+<section class="page contact">
+  <h2>{{ 'CONTACT_TITLE' | translate }}</h2>
+  <div class="contact-info">
+    <span>📧</span> <a href="mailto:jgarciacaliz&#64;gmail.com">jgarciacaliz&#64;gmail.com</a><br>
+    <span>🆔</span> CC 1020822910 - PA AS796528<br>
+    <span>📱</span> (+57) 304 299 9026<br>
+    <span>🔗</span> <a href="https://www.linkedin.com/in/jgarciacaliz" target="_blank">in/jgarciacaliz</a><br>
+    <span>🌐</span> <a href="https://jgarciacaliz.github.io/" target="_blank">jgarciacaliz.github.io</a>
+  </div>
+</section>
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\work\experience.component.css
+--------------------------------------------------------------------------------
+
+.role-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #C00000;
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+body.dark-mode .role-title {
+  color: #C00000;
+  filter: brightness(1.2);
+}
+.experience { padding:2rem; }
+.experience-header { text-align:center; margin-bottom:2rem; }
+.experience-summary { font-size:1.2rem; color:#555; margin-bottom:1.5rem; }
+body.dark-mode .experience-summary { color: #eee !important; }
+.experience-exp-time { font-size:1rem; color:#333; margin-bottom:1.5rem; background:#f8f8f8; border-radius:1rem; padding:0.5rem 1rem; display:inline-block; }
+.experience-experience { display:flex; gap:2rem; justify-content:center; flex-wrap:wrap; }
+.experience-profile, .experience-companies { background:#fff; border-radius:1rem; box-shadow:0 2px 12px rgba(0,0,0,0.08); padding:1.5rem; min-width:220px; max-width:320px; }
+.experience-profile h3, .experience-companies h3 { margin-top:0; font-size:1.1rem; color:#333; }
+.experience-profile p, .experience-companies p { color: #555; }
+body.dark-mode .experience-profile p { color: #eee !important; }
+.experience-companies ul { padding-left:1.2rem; }
+.company-dates {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  display: block;
+}
+.company-btn { 
+  background: #f0f0f0; 
+  border: none; 
+  border-radius: 0.5rem; 
+  padding: 0.5rem 1rem; 
+  margin-bottom: 0.5rem; 
+  cursor: pointer; 
+  font-weight: bold; 
+  color: #333; 
+  transition: background 0.2s; 
+}
+.company-btn:hover { background: #e0e0e0; }
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\work\experience.component.html
+--------------------------------------------------------------------------------
+<section class="page experience">
+  <div class="experience-header">
+    <h2>{{ 'WORK_TITLE'   | translate }}</h2>
+    <p class="experience-summary">
+      {{ 'WORK_SUMMARY' | translate }}
+    </p>
+    <div class="experience-exp-time" style="margin-top:1.5rem;">
+      <span>
+        {{ 'WORK_EXPERIENCE_TIME' | translate }} || {{ getTotalDuration() }} años de experiencia
+      </span>
+    </div>
+  </div>
+
+  <div class="experience-experience">
+    <div class="experience-profile">
+      <h3>{{ 'WORK_PROFILE_TITLE'   | translate }}</h3>
+      <p>{{ 'WORK_PROFILE_SUMMARY' | translate }}</p>
+    </div>
+
+    <div class="experience-companies">
+      <h3>{{ 'WORK_COMPANIES_TITLE' | translate }}</h3>
+      <ul>
+        <li *ngFor="let company of companies">
+          <button
+            class="company-btn"
+            (click)="toggleDetail(company)"
+          >
+            {{ company.key | translate }}
+          </button>
+          <div *ngIf="selectedDetail === company.detailKey" style="margin:0.5rem 0 1rem 1rem;">
+            <p class="company-desc">{{ (company.key + '_DESC') | translate }}</p>
+          </div>
+          <!-- Roles por empresa -->
+          <ul class="company-roles" *ngIf="selectedDetail === company.detailKey">
+            <li *ngFor="let role of company.roles">
+              <strong class="role-title">{{ role.title | translate }}</strong>
+              <span class="company-dates">
+                {{ formatPeriod(role.start, role.end) }}
+                <span class="company-duration">({{ getDuration(role.start, role.end) }})</span>
+              </span>
+              <p class="role-desc">{{ (role.title.replace('_TITLE', '_DESC')) | translate }}</p>
+              <p class="role-cont">{{ (role.title.replace('_TITLE', '_CONT')) | translate }}</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\work\header.component.html
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\work\landing-page.component.css
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\work\profile.component.css
+--------------------------------------------------------------------------------
+.profile { padding:2rem; }
+.profile-hero { text-align:center; margin-bottom:2rem; }
+.profile-summary { font-size:1.2rem; color:#555; margin-bottom:1.5rem; }
+body.dark-mode .profile-summary { color: #eee !important; }
+.profile-details { display:flex; gap:2rem; justify-content:center; flex-wrap:wrap; margin-bottom:2rem; }
+.profile-card { background:#fff; border-radius:1rem; box-shadow:0 2px 12px rgba(0,0,0,0.08); padding:1.5rem; min-width:220px; max-width:320px; }
+body.dark-mode .profile-card { background: #222 !important; }
+.profile-card h3 { margin-top:0; font-size:1.1rem; color:#333; }
+body.dark-mode .profile-card h3 { color: #eee !important; }
+.profile-card ul { padding-left:1.2rem; }
+.profile-card li { margin-bottom:0.5rem; color:#444; }
+body.dark-mode .profile-card li { color: #eee !important; }
+.profile-card p { color: #555; }
+body.dark-mode .profile-card p { color: #eee !important; }
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\work\profile.component.html
+--------------------------------------------------------------------------------
+<!-- src/app/profile.component.html -->
+<section class="page profile">
+  <div class="profile-hero">
+    <h2>{{ 'PROFILE_TITLE' | translate }}</h2>
+  </div>
+  <div class="profile-details">
+    <div class="profile-card">
+      <h3>{{ 'PROFILE_OVERVIEW_TITLE' | translate }}</h3>
+      <p>{{ 'PROFILE_OVERVIEW' | translate }}</p>
+    </div>
+    <div class="profile-card">
+      <h3>{{ 'PROFILE_EDUCATION_TITLE' | translate }}</h3>
+      <ul>
+        <li>{{ 'PROFILE_EDUCATION_1' | translate }}</li>
+        <li>{{ 'PROFILE_EDUCATION_2' | translate }}</li>
+      </ul>
+    </div>
+    <div class="profile-card">
+      <h3>{{ 'PROFILE_COMPETENCIES_TITLE' | translate }}</h3>
+      <ul>
+        <li>{{ 'PROFILE_COMPETENCY_ANALYSIS' | translate }}</li>
+        <li>{{ 'PROFILE_COMPETENCY_PROCESS' | translate }}</li>
+        <li>{{ 'PROFILE_COMPETENCY_NLP' | translate }}</li>
+        <li>{{ 'PROFILE_COMPETENCY_AGILE' | translate }}</li>
+      </ul>
+    </div>
+    <div class="profile-card">
+      <h3>{{ 'PROFILE_AREAS_TITLE' | translate }}</h3>
+      <ul>
+        <li>{{ 'PROFILE_AREA_DATA_ENG' | translate }}</li>
+        <li>{{ 'PROFILE_AREA_PROCESS_MINING' | translate }}</li>
+        <li>{{ 'PROFILE_AREA_AUTOMATION' | translate }}</li>
+        <li>{{ 'PROFILE_AREA_SIMULATION' | translate }}</li>
+      </ul>
+    </div>
+    <div class="profile-card">
+      <h3>{{ 'PROFILE_INTERESTS_TITLE' | translate }}</h3>
+      <ul>
+        <li>{{ 'PROFILE_INTEREST_AI_BUSINESS' | translate }}</li>
+        <li>{{ 'PROFILE_INTEREST_SOCIAL_POLICY' | translate }}</li>
+        <li>{{ 'PROFILE_INTEREST_ACCESSIBILITY' | translate }}</li>
+      </ul>
+    </div>
+    <div class="profile-card">
+      <h3>{{ 'PROFILE_LANGUAGES_TITLE' | translate }}</h3>
+      <ul>
+        <li>{{ 'PROFILE_LANGUAGE_ES' | translate }}</li>
+        <li>{{ 'PROFILE_LANGUAGE_EN' | translate }}</li>
+        <li>{{ 'PROFILE_LANGUAGE_FR' | translate }}</li>
+        <li>{{ 'PROFILE_LANGUAGE_DE' | translate }}</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\work\projects.component.css
+--------------------------------------------------------------------------------
+.projects { padding:2rem; }
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\work\projects.component.html
+--------------------------------------------------------------------------------
+<section class="page projects"><h2>Projects</h2></section>
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\work\skills.component.css
+--------------------------------------------------------------------------------
+/* src/app/work/skills.component.css */
+.skill-btn {
+  background: #f0f0f0;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #222;
+  transition: background 0.2s, color 0.2s;
+  width: 100%;
+  text-align: left;
+}
+.skill-btn:hover,
+.skill-btn.selected {
+  background: #e0e0e0;
+  color: #222;
+}
+body.dark-mode .skill-btn:hover,
+body.dark-mode .skill-btn:active {
+  background: #C00000 !important;
+  color: #fff !important;
+}
+body.dark-mode .skill-btn.selected {
+  background: #333 !important;
+  color: #eee !important;
+}
+
+.skill-detail {
+  animation: fadeInSkill 0.3s;
+  margin-bottom: 1em;
+  padding-left: 1rem;
+}
+@keyframes fadeInSkill {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.skills-competencies-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.skills-list, .competencies-list {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  min-width: 260px;
+  max-width: 340px;
+}
+/* Mantener fondo blanco aun en modo oscuro */
+body.dark-mode .skills-list,
+body.dark-mode .competencies-list {
+  background: #fff !important;
+}
+
+.competencies-list h3,
+.skills-list h3 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+}
+/* Mantener texto negro en modo oscuro */
+body.dark-mode .competencies-list h3,
+body.dark-mode .skills-list h3 {
+  color: #222 !important;
+}
+
+.skills-list h4 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: #C00000;
+}
+/* Mantener rojo en modo oscuro */
+body.dark-mode .skills-list h4 {
+  color: #C00000 !important;
+}
+
+.tool-group h5 {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+/* Título de sección de herramientas legible en oscuro */
+body.dark-mode .tool-group h5 {
+  color: #eee !important;
+}
+
+.competency-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #C00000;
+  margin-bottom: 0.2em;
+}
+
+.competency-description,
+.skill-description,
+.tool-desc,
+.skill-context,
+.tool-context {
+  color: #555;
+  margin-bottom: 0.5em;
+}
+/* Texto secundario claro para descripciones, pero no para tool-context */
+body.dark-mode .competency-description,
+body.dark-mode .skill-description,
+body.dark-mode .skill-context,
+body.dark-mode .tool-desc {
+  color: #eee !important;
+}
+
+.tool-group {
+  margin-top: 1rem;
+}
+.tool-group ul {
+  list-style: none;
+  padding: 0;
+}
+.tool-group li {
+  margin-bottom: 1rem;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.skills-summary {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+/* Resumen más claro en modo oscuro */
+body.dark-mode .skills-summary {
+  color: #ccc !important;
+}
+
+--------------------------------------------------------------------------------
+
+
+File: C:\Users\jgarc\OneDrive\Joe\Development\Repositories\jgarciacaliz.github.io\src\app\work\skills.component.html
+--------------------------------------------------------------------------------
+<!-- src/app/work/skills.component.html -->
+<section class="page skills">
+  <div class="skills-header">
+    <h2>{{ 'SKILLS_COMPETENCIES_TITLE' | translate }}</h2>
+    <p class="skills-summary">
+      {{ 'SKILLS_COMPETENCIES_SUMMARY' | translate }}
+    </p>
+  </div>
+
+  <div class="skills-competencies-grid">
+    <div class="competencies-list">
+      <h3>{{ 'COMPETENCIES_SECTION_TITLE' | translate }}</h3>
+      <ul>
+        <li *ngFor="let comp of competencies">
+          <strong class="competency-title">{{ comp.key | translate }}</strong>
+          <p class="competency-description">{{ comp.descriptionKey | translate }}</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="skills-list">
+      <h3>{{ 'SKILLS_SECTION_TITLE' | translate }}</h3>
+
+      <h4>{{ 'SKILL_CATEGORY_AREAS' | translate }}</h4>
+      <ul>
+        <li *ngFor="let area of areas">
+          <button class="skill-btn"
+                  [class.selected]="selectedKey === area.key"
+                  (click)="toggle(area.key)">
+            {{ area.key | translate }}
+          </button>
+          <div *ngIf="selectedKey === area.key" class="skill-detail">
+            <p class="skill-description">{{ area.descKey | translate }}</p>
+            <p class="tool-context">{{ area.contKey | translate }}</p>
+          </div>
+        </li>
+      </ul>
+
+      <h4>{{ 'SKILL_CATEGORY_LANGUAGES' | translate }}</h4>
+      <ul>
+        <li *ngFor="let lang of languages">
+          <button class="skill-btn"
+                  [class.selected]="selectedKey === lang.key"
+                  (click)="toggle(lang.key)">
+            {{ lang.key | translate }}
+          </button>
+          <div *ngIf="selectedKey === lang.key" class="skill-detail">
+            <p class="skill-description">{{ lang.descKey | translate }}</p>
+            <p class="tool-context">{{ lang.contKey | translate }}</p>
+          </div>
+        </li>
+      </ul>
+
+      <h4>{{ 'SKILL_CATEGORY_TOOLS' | translate }}</h4>
+      <div *ngFor="let tool of tools" class="tool-group">
+        <h5>{{ tool.titleKey | translate }}</h5>
+        <p class="tool-desc">{{ tool.descKey | translate }}</p>
+        <p class="tool-context">{{ tool.contKey | translate }}</p>
+        <ul>
+          <li *ngFor="let item of tool.items">
+            <button class="skill-btn"
+                    [class.selected]="selectedKey === item.key"
+                    (click)="toggle(item.key)">
+              {{ item.title }}
+            </button>
+            <div *ngIf="selectedKey === item.key" class="skill-detail">
+              <p class="tool-desc">{{ item.desc }}</p>
+              <p class="tool-context">{{ item.context }}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+--------------------------------------------------------------------------------

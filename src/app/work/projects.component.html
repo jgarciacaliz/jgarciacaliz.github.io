@@ -1,1 +1,50 @@
-<section class="page projects"><h2>Projects</h2></section>
+<section class="page projects">
+  <div class="projects-header">
+    <h2>{{ 'PROJECTS_TITLE' | translate }}</h2>
+    <p class="projects-summary">{{ 'PROJECTS_SUMMARY' | translate }}</p>
+  </div>
+
+  <div class="projects-columns">
+    <div class="projects-col">
+      <h3 class="section-title">{{ 'PROJECTS_PROFESSIONAL_TITLE' | translate }}</h3>
+      <div class="projects-grid">
+        <article *ngFor="let p of professionalProjects" class="project-card" [attr.id]="p.id">
+          <h4 class="project-title">{{ p.nameKey | translate }}</h4>
+          <div class="project-company" *ngIf="p.companyKey">
+            <strong>{{ 'PROJECT_COMPANY' | translate }}:</strong>{{ p.companyKey | translate }}
+          </div>
+          <p class="project-desc">{{ p.descKey | translate }}</p>
+          <div class="project-stack">
+            <strong>{{ 'PROJECT_STACK' | translate }}:</strong>
+          </div>
+          <ul class="chips">
+            <li *ngFor="let s of p.skills">
+              <a class="chip" [routerLink]="['/skills']" [fragment]="toSkillFragment(s)">{{ s | translate }}</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </div>
+
+    <div class="projects-col">
+      <h3 class="section-title">{{ 'PROJECTS_PERSONAL_TITLE' | translate }}</h3>
+      <div class="projects-grid">
+        <article *ngFor="let p of personalProjects" class="project-card" [attr.id]="p.id">
+          <h4 class="project-title">{{ p.nameKey | translate }}</h4>
+          <p class="project-desc">{{ p.descKey | translate }}</p>
+          <div class="project-stack">
+            <strong>{{ 'PROJECT_STACK' | translate }}:</strong>
+          </div>
+          <ul class="chips">
+            <li *ngFor="let s of p.skills">
+              <a class="chip" [routerLink]="['/skills']" [fragment]="toSkillFragment(s)">{{ s | translate }}</a>
+            </li>
+          </ul>
+          <div class="project-links" *ngIf="p.repoUrl || p.siteUrl">
+            <a *ngIf="p.repoUrl" class="project-btn" [href]="p.repoUrl" target="_blank" rel="noopener">{{ 'PROJECT_VIEW_GITHUB' | translate }}</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,4 +1,3 @@
-/* Header block for name and photo */
 .landing-header-block {
   display: flex;
   flex-direction: column;
@@ -99,7 +98,6 @@
   box-sizing: border-box;
 }
 
-/* Contenedor de globos */
 .controls {
   position: absolute;
   top: 1rem;
@@ -110,7 +108,6 @@
   z-index: 10;
 }
 
-/* Estilo común a los globos */
 .control-btn {
   width: 2.5rem;
   height: 2.5rem;
@@ -124,13 +121,13 @@
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   transition: background 0.2s, color 0.2s;
-  color: currentColor;     /* lets svg fill follow the current text color */
+  color: currentColor;
 }
 
 .control-btn svg {
   width: 1.5rem;
   height: 1.5rem;
-  fill: currentColor;      /* picks up the .control-btn color */
+  fill: currentColor;
 }
 
 .control-btn:hover {
@@ -138,10 +135,9 @@
 }
 
 body.dark-mode .control-btn {
-  color: #eee;    /* or whatever you choose for dark */
+  color: #eee;
 }
 
-/* Dropdown de idioma que envuelve al componente */
 .lang-dropdown {
   position: absolute;
   top: 3rem;
@@ -154,7 +150,6 @@ body.dark-mode .control-btn {
   overflow: hidden;
 }
 
-/* Animaciones de headings */
 .heading {
   position: absolute;
   left: 50%;
@@ -175,7 +170,6 @@ body.dark-mode .control-btn {
   transform: translate(-50%, -40%);
 }
 
-/* Menú principal */
 .menu {
   position: absolute;
   top: 60%;

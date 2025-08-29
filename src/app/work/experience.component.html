@@ -30,7 +30,6 @@
           <div *ngIf="selectedDetail === company.detailKey" style="margin:0.5rem 0 1rem 1rem;">
             <p class="company-desc">{{ (company.key + '_DESC') | translate }}</p>
           </div>
-          <!-- Roles por empresa -->
           <ul class="company-roles" *ngIf="selectedDetail === company.detailKey">
             <li *ngFor="let role of company.roles">
               <strong class="role-title">{{ role.title | translate }}</strong>
