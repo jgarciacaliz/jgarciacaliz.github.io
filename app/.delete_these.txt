@@ -1,9 +1,0 @@
-Eliminar estos archivos:
-- home.component.ts
-- work.component.ts
-- art.component.ts
-- certifications.component.ts
-- research.component.ts
-- hobbies.component.ts
-
-Ya no son necesarios.
