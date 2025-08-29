@@ -82,8 +82,45 @@
   "WORK_COMPANY_3_ROLE_1_CONT": "Creación y mantenimiento de bases de datos, desarrollo de algoritmos para extracción de KPIs y estructuración de presentaciones de productos.",
   "WORK_COMPANY_3_ROLE_1_START": "2019-07-01",
   "WORK_COMPANY_3_ROLE_1_END": "2020-06-30",
-
   
+  "PROJECTS_TITLE": "Proyectos",
+  "PROJECTS_SUMMARY": "Selección curada de proyectos profesionales y personales. Incluye plataformas de gobierno de datos y procesos, analítica e IA aplicada, así como proyectos open-source y de aprendizaje.",
+  "PROJECTS_PROFESSIONAL_TITLE": "Proyectos profesionales",
+  "PROJECTS_PERSONAL_TITLE": "Proyectos personales",
+  "PROJECT_STACK": "Áreas de conocimiento y tecnologías utilizadas",
+  "PROJECT_VIEW_GITHUB": "Ver en GitHub",
+
+  "PROJ_PROF_ASEGURA20_NAME": "Gobierno de datos",
+  "PROJ_PROF_ASEGURA20_DESC": "Implementación de las políticas, requerimientos, procesos y herramientas para la gestión de gobierno de datos en Summa. Incluye la creación de los procesos de gobierno de datos, requerimientos en incidentes de datos y analítica, creación del EDM y publicación del manual de gobierno de datos en la organización.",
+
+  "PROJ_PROF_CMDB_NAME": "CMDB",
+  "PROJ_PROF_CMDB_DESC": "Aprovisionamiento de la base de datos de configuración (ServiceNow) con la información en tiempo real de los componentes de red y activos de la organiazción, apoyado en la analítica e indicadores para el cumplimiento de los equipos de infraestructura, telecomunicaciones y soporte en sitio, así como el uso Itom para realizar el descubrimiento de red.",
+
+  "PROJ_PROF_HUB_IND_NAME": "Hub de indicadores",
+  "PROJ_PROF_HUB_IND_DESC": "Recolección de las preguntas de negocio de los líderes de la gerencia de TI, su categorización y estudio para el aprovisionamiento de datos y la construcción del modelo de datos conceptual de la gerencia de TI, y su procesamiento al datalake para su despliegue en PowerBI.",
+
+  "PROJ_PROF_RAG_BOTS_NAME": "Agente de Procesos",
+  "PROJ_PROF_RAG_BOTS_DESC": "Aprovisionamiento de la estructura documental para la alimentación de un modelo de ChatGPT en infraestructura de azure con memoría RAG, efoncado en la autogestión de conocimiento de los colaboradores de la compañía con respecto a la documentación de los procesos de cada gerencia.",
+
+  "PROJ_PERSONAL_GITHUBIO_NAME": "Portafolio (este sitio)",
+  "PROJ_PERSONAL_GITHUBIO_DESC": "SPA en Angular 20 con i18n y animaciones, desplegada en GitHub Pages (carpeta docs/), con componentes reutilizables y estilo consistente.",
+
+  "PROJ_PERSONAL_SEER_NAME": "Seer",
+  "PROJ_PERSONAL_SEER_DESC": "Aplicación en Go para ingesta en tiempo real (WS/REST), almacenamiento local y visualización 2D con bucle de render Ebiten. Exportación para análisis y pruebas.",
+
+  "PROJ_PERSONAL_GATOVISION_NAME": "Gatovision",
+  "PROJ_PERSONAL_GATOVISION_DESC": "Proyecto de visión por computador para detección/seguimiento en webcam. Pipeline simple con preprocesamiento, umbrales y prototipos de modelos ligeros.",
+
+  "PROJ_PERSONAL_ALIRIO_NAME": "Alirio",
+  "PROJ_PERSONAL_ALIRIO_DESC": "Bot modular con puertos y adaptadores para Discord y LLMs (Ollama). Contexto, memoria ligera y utilidades de conversación.",
+  
+  "PROJECT_COMPANY": "Compañía",
+  "PROJ_COMPANY_SUMMA_ARGOS": "Summa (Grupo Argos)",
+  "PROJ_COMPANY_INTERNAL_TI": "TI Interna",
+
+  "RELATED_PROJECTS": "Proyectos relacionados",
+  "SEE_ALL_PROJECTS": "Ver todos los proyectos",
+
   "SKILLS_TITLE": "Habilidades",
   "SKILLS_SUMMARY": "Un resumen de mis principales habilidades técnicas y blandas.",
   "SKILLS_COMPETENCIES_TITLE": "Habilidades y competencias",
@@ -443,5 +480,6 @@
   "CERT_12_DATE": "2020-07-02",
   "CERT_12_TUTOR": "Equipo SuperDataScience",
   "CERT_12_DESC": "Curso diseñado para aprender machine learning desde cero, impartido por expertos en ciencia de datos. Incluye teoría, algoritmos y librerías de programación explicados de forma sencilla, con tutoriales en Python y R. El temario abarca preprocesamiento de datos, regresión (lineal, múltiple, polinómica, SVR, árboles, random forest), clasificación (logística, K-NN, SVM, Naive Bayes, árboles, random forest), clustering (K-means, jerárquico), reglas de asociación (Apriori, Eclat), aprendizaje por refuerzo, procesamiento de lenguaje natural, deep learning (ANN, CNN), reducción de dimensionalidad y técnicas de selección y mejora de modelos. Cada sección es independiente y se complementa con ejercicios prácticos y plantillas descargables para proyectos propios.",
+  
   "CONTACT_TITLE": "Información de contacto"
 }

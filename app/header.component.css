@@ -1,0 +1,102 @@
+.app-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 0rem 2rem;
+  min-height: 3.5rem;
+  z-index: 200;
+}
+.app-header nav {
+  display: flex;
+  gap: 1rem;
+}
+.app-header a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  position: relative;
+  padding: 0.2em 0.2em;
+  border-radius: 0;
+  background: none;
+  transition: color 0.2s;
+  min-width: 0;
+  display: inline-block;
+}
+.app-header a.active {
+  border-bottom: none;
+}
+.app-header a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.1em;
+  height: 3px;
+  background: #C00000;
+  border-radius: 2px;
+  opacity: 0;
+  pointer-events: none;
+  transition: left 0.4s cubic-bezier(.4,1,.6,1), right 0.4s cubic-bezier(.4,1,.6,1), opacity 0.2s;
+}
+.app-header a.active::after,
+.app-header a:hover::after {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.app-header a:hover {
+  color: #C00000 !important;
+  background: none;
+}
+.controls {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.control-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.8);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background 0.2s, color 0.2s;
+  color: currentColor;
+}
+.control-btn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+.lang-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255,255,255,0.9);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 0;
+  min-width: unset;
+}
+body.dark-mode .app-header {
+  color: #eee;
+}
+body.dark-mode .app-header a {
+  color: #eee;
+}
+body.dark-mode .app-header a.active {
+  border-color: #fff;
+}

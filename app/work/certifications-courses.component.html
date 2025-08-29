@@ -1,0 +1,20 @@
+<section class="page certifications-courses">
+  <div class="cert-header">
+    <h2>{{ 'CERT_TITLE' | translate }}</h2>
+    <p class="cert-summary">{{ 'CERT_SUMMARY' | translate }}</p>
+  </div>
+  <div class="cert-list">
+    <div *ngFor="let cert of certifications" class="cert-card">
+      <h3>{{ cert.title | translate }}</h3>
+      <p class="cert-subtitle">{{ cert.detail | translate }}</p>
+      <p><strong>{{ cert.date | translate }}</strong></p>
+      <p><em>{{ cert.tutor | translate }}</em></p>
+      <p>{{ cert.description | translate }}</p>
+      <ng-container *ngIf="certNumber(cert) <= 12">
+        <a class="cert-download-btn" [href]="'assets/documents/cert' + certNumber(cert) + '.pdf'" download target="_blank">
+          Descargar certificado
+        </a>
+      </ng-container>
+    </div>
+  </div>
+</section>
