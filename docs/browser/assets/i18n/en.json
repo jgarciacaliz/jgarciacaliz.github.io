@@ -83,6 +83,44 @@
   "WORK_COMPANY_3_ROLE_1_START": "2019-07-01",
   "WORK_COMPANY_3_ROLE_1_END": "2020-06-30",
 
+   "PROJECTS_TITLE": "Projects",
+  "PROJECTS_SUMMARY": "Curated selection of professional and personal projects. Includes data and process governance platforms, applied analytics and AI, as well as open-source and learning projects.",
+  "PROJECTS_PROFESSIONAL_TITLE": "Professional Projects",
+  "PROJECTS_PERSONAL_TITLE": "Personal Projects",
+  "PROJECT_STACK": "Knowledge areas and technologies used",
+  "PROJECT_VIEW_GITHUB": "View on GitHub",
+
+  "PROJ_PROF_ASEGURA20_NAME": "Data Governance",
+  "PROJ_PROF_ASEGURA20_DESC": "Implementation of policies, requirements, processes, and tools for data governance management at Summa. Includes the creation of governance processes, requirements for data incidents and analytics, development of the EDM, and publication of the data governance manual within the organization.",
+
+  "PROJ_PROF_CMDB_NAME": "CMDB",
+  "PROJ_PROF_CMDB_DESC": "Provisioning of the configuration database (ServiceNow) with real-time information on network components and organizational assets, supported by analytics and indicators to ensure compliance of infrastructure, telecommunications, and on-site support teams, as well as the use of ITOM for network discovery.",
+
+  "PROJ_PROF_HUB_IND_NAME": "Indicator Hub",
+  "PROJ_PROF_HUB_IND_DESC": "Collection of business questions from IT management leaders, their categorization and study for data provisioning and the construction of IT management’s conceptual data model, and its processing into the datalake for deployment in Power BI.",
+
+  "PROJ_PROF_RAG_BOTS_NAME": "Process Agent",
+  "PROJ_PROF_RAG_BOTS_DESC": "Provisioning of the document structure to feed a ChatGPT model on Azure infrastructure with RAG memory, focused on self-service knowledge management for employees regarding process documentation of each management area.",
+
+  "PROJ_PERSONAL_GITHUBIO_NAME": "Personal Portfolio (this site)",
+  "PROJ_PERSONAL_GITHUBIO_DESC": "Angular 20 SPA with i18n and animations, deployed on GitHub Pages (docs/ folder), featuring reusable components and consistent styling.",
+
+  "PROJ_PERSONAL_SEER_NAME": "Seer — Market Ingestion and Visualization in Go",
+  "PROJ_PERSONAL_SEER_DESC": "Go application for real-time ingestion (WS/REST), local storage, and 2D visualization with Ebiten render loop. Export available for analysis and testing.",
+
+  "PROJ_PERSONAL_GATOVISION_NAME": "Gatovision — Cat Recognition",
+  "PROJ_PERSONAL_GATOVISION_DESC": "Computer vision project for detection/tracking via webcam. Simple pipeline with preprocessing, thresholds, and lightweight model prototypes.",
+
+  "PROJ_PERSONAL_ALIRIO_NAME": "Alirio — Discord Bot with Hexagonal Architecture",
+  "PROJ_PERSONAL_ALIRIO_DESC": "Modular bot with ports and adapters for Discord and LLMs (Ollama). Provides context, lightweight memory, and conversation utilities.",
+
+  "PROJECT_COMPANY": "Company",
+  "PROJ_COMPANY_SUMMA_ARGOS": "Summa (Grupo Argos)",
+  "PROJ_COMPANY_INTERNAL_TI": "Internal IT",
+
+  "RELATED_PROJECTS": "Related Projects",
+  "SEE_ALL_PROJECTS": "See all projects",
+
   "SKILLS_TITLE": "Skills",
   "SKILLS_SUMMARY": "A summary of my main technical and soft skills.",
   "SKILLS_COMPETENCIES_TITLE": "Skills and Competencies",
